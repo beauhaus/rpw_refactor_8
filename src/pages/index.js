@@ -12,7 +12,8 @@ const Indexpage = () => {
         // <Layout>
         //     <Landing/>
         // </Layout>
-        <div>FUCK!
+        <div>
+            <h1>hello</h1>
             <About/>
         </div>
         )
