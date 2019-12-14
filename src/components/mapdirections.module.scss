@@ -1,0 +1,20 @@
+@import '../styles/variables.css';
+
+.map-directions-box {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  height: 20%;
+  svg {
+    height: 100%;
+    rect {
+      fill: var(--slate-green);
+    }
+  }
+ }
+ .map-directions-box:hover {
+  cursor: pointer;
+ }
+ .map-directions-box:hover svg rect {
+  fill: var(--slate-green-lt);
+ }
