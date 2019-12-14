@@ -1,0 +1,211 @@
+@import '../styles/variables.css';
+
+/*
+Mobile-first menu attribution: Kevin Powell
+https://youtu.be/8QKOaTYvYUA
+*/
+
+.header {
+    padding: 0 0 3rem;
+    background: var(--muted-green);
+    height: 8vh;
+    text-align: center;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    height: 8vh;
+    grid-row: 1;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.4);
+    .title {
+        a {
+            // color: var(--rudy-text);
+            font-size: 1.5rem;
+        }
+    }
+}
+
+nav.top-nav {
+    position: absolute;
+    top: 8vh;
+    height: 92vh;
+    text-align: left;
+    left: 0;
+    background: var(--foggy-grey-trans);
+    
+    width: 100vw;
+    transform: scale3d(1, 0, 1);
+    transform-origin: top;
+    transition: transform 300ms ease-in-out;
+    // box-shadow: inset 0 0 30px 10px rgba(0,0,0,0.5);
+    box-shadow: inset 0 0 40px 10px rgba(0,0,0,0.6);
+
+    // border-radius: 5px;
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+}
+
+.nav-list {
+    list-style-type: none;
+    /*edits*/
+    /* index.scss margin-left: 1.45rem; override */
+    margin: 5vh auto;
+    height: 66.6vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    hr {
+        width: 80vw;
+        margin: 0 auto;
+        height: 2px;
+        background: #fff;
+    }
+}
+
+.nav-list-item {
+    margin-left: 0.8rem;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+    
+    /*edits*/
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    margin-left: 12vw;
+    text-align: left;
+}
+.nav-list-item a {
+    text-transform: uppercase;
+    opacity: 0;
+    transition: opacity 300ms ease-in-out 200ms;
+
+    /*edits*/
+    font-size: 2rem;
+}
+
+.nav-list-item:hover {
+    color: #666;
+}
+
+.active-nav-item {
+    // font-weight: bold;
+    // color: red;
+    
+    // text-shadow: 0px 0px 1px #eee;
+}
+
+.toggler  {
+    display: none;
+    &:checked ~ nav {
+        transform: scale3d(1,1,1);
+        a {
+            opacity: 1;
+            color: white;
+            font-weight: 100;
+        }
+    }
+}
+/* burger button */
+label.toggler-label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    width: 16vw;
+    min-width: 48px;
+    span {
+        position: relative;
+        display: block;
+        height: 0;
+        width: 10vw;
+        border-radius: 2px;
+        margin-left: 2vw;
+        filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.5));
+    }
+    
+    span::before, span::after {
+        content: '';
+        display: block;
+        background: white;
+        height: 5px;
+        width: 10vw;
+        border-radius: 2px;
+        position: absolute;
+    }
+    span::before {
+        bottom: 4px;
+    }
+    span::after {
+        top: 4px;
+    }
+    
+}
+
+
+
+/*************************************************/
+/************* iPad and larger  ******************/
+/*************************************************/
+
+@media screen and (min-width: 768px) {
+    .active-nav-item {
+        font-weight: bold;
+        // text-shadow: 0px 0px 1px #eee;
+    }
+    
+    label.toggler-label {
+        display: none;
+    }
+    .header {
+        display: grid;  
+        grid-template-columns: 1fr auto minmax(540px, 2fr) 1fr;        
+        .title {
+            margin-bottom: 0;
+            margin-top: 1vh;
+            margin-left: 1vw;
+            a {
+               grid-column: 2/ 3;
+               color: var(--rudy-text);
+               font-size: 1.8rem;
+
+           }
+        }
+        .top-nav {
+            all: unset;
+            grid-column: 3/4;
+            height: 8vh;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            ul {
+                display: flex;
+                height: 100%;
+                margin-bottom: 0;
+            }
+            .nav-list {
+                margin-left: 3rem;
+                color: #fff;
+                display: flex;
+                /*edits*/
+                
+                height: 100%;
+                margin: 0;
+                flex-direction: row;
+                hr {
+                    display: none;
+                }
+                .nav-list-item {
+                    margin-top: 2.5vh;
+                    margin-left: 1rem;
+                    a {
+                        //TODO: some styles aren't triggering
+                        opacity: 1;
+                        font-size: 1.4rem;
+                        // color: var(--rudy-text);
+                    }
+                }
+             }
+        }
+    }
+}

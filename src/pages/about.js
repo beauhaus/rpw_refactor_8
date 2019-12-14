@@ -1,11 +1,15 @@
 import React from 'react'
 
-const About =(input) => {
+import aboutStyles from './about.module.scss'
+
+const About =(props) => {
     
-    // console.log(">about: ", input)
+    console.log(">about: ", props.input)
 
     return(
-        <hi>H1</hi>
+        <div className={aboutStyles.container}>
+            <h1>H1</h1>
+        </div>
     )
 }
 

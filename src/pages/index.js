@@ -1,22 +1,19 @@
 import React from 'react'
 
-// import Layout from '../components/layout'
+import Layout from '../components/layout'
 
 // import Landing from '../components/landing'
-// import indexStyles from './index.module.scss'
 
 import About from './about'
 
 const Indexpage = () => {
-    return(
-        // <Layout>
-        //     <Landing/>
-        // </Layout>
-        <div>
+    return (
+        <Layout>
+            {/* <Landing/> */}
             <h1>hello</h1>
-            <About/>
-        </div>
-        )
+            <About input="hi!" />
+        </Layout>
+    )
 }
 
 export default Indexpage;

@@ -1,0 +1,36 @@
+:root {
+    
+    --primary-color: rgba(143, 143, 143, 0.3);
+    --secondary-color: rgba(16, 104, 63, 0.5);
+    --rudy-grey: #bcbaae;
+    --rudy-pink: #e064ad;
+    --rudy-pink-trans: rgba(241, 85, 176, 0.8);
+    --pink-lt: #ff7bc8;
+    --rudy-blue: #bedaec;
+    --rudy-blue-trans: rgba(116, 182, 223, 0.85);
+    
+    --slate-blue: #465661;
+    --slate-green: #699563;
+    --slate-green-lt: #78a772;
+
+    --contact-dk-txt: #221F20;
+    
+    --rudy-text: #3f3f3f;
+    --rudy-navy: #1a3b5f;
+    --btn-cta-green: rgb(133, 212, 133); 
+    
+    --insta-pink: rgb(194, 119, 131);
+    --insta-pink-lt: rgb(216, 178, 185);
+
+    --muted-pink:#FFE4DC;
+
+    --colorB: rgb(187, 159, 159);
+    --muted-green:#93BCB0;
+    --muted-green-dk:rgb(106, 134, 126);
+        
+    --foggy-grey-trans: rgba(143, 143, 143, 0.3);
+    
+    --banana-cream: #f3d4ba;
+
+    
+}

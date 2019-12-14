@@ -1,0 +1,31 @@
+/********container div is a grid *********/
+
+.container {
+    margin: 0 auto;
+    width: 100vw;
+    max-width: 1680px;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 100vw;
+    // grid-template-rows: 8vh auto 12vh;
+    grid-template-rows: 8vh 1fr 12vh;
+    background: var(--rudy-blue);
+    main {
+        /* edit: main seems to slip underneath fixed header*/
+        margin-top: 1vh;
+        
+    }
+}
+
+
+/*************************************************/
+/************* iPad and larger  ******************/
+/*************************************************/
+
+@media screen and (min-width: 768px) {
+    .container {
+        main {
+            margin-top: 0;
+        }
+    }
+}

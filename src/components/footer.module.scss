@@ -1,0 +1,49 @@
+@import '../styles/variables.css';
+
+.footer {
+    background: var(--muted-green);
+    color: var(--rudy-text);
+    grid-column: 1;
+    grid-row: 3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .address {
+        p {
+            font-size: 1rem;
+            /* overriding index.scss */
+            margin-bottom: 0;
+            font-weight: bold;
+        }
+    }
+    .icon-container {
+        width: 35vw;
+        display: flex;
+        img {
+            margin: auto 1vw;
+            height: 90%;
+        }
+    }
+}
+
+
+/*************************************************/
+/************* iPad and larger  ******************/
+/*************************************************/
+
+@media screen and (min-width: 768px) {
+    .footer {
+        justify-content: space-between;
+        .address {
+            p {
+                font-size: 1.3rem;
+                margin-left: 2vw;
+                margin-bottom: 0;
+            }
+        }
+        .icon-container {
+            width: 15vw;
+            margin-right: 2vw;
+        }
+    }
+}
