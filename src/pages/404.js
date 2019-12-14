@@ -2,9 +2,9 @@ import React from 'react'
 import Layout from '../components/layout'
 import { Link } from 'gatsby'
 
-import fourohfourDog from '../../static/images/doglist/404-dog3.gif';
+import fourohfourDog from '../../images/doglist/404-dog3.gif';
 import fourOhFourStyles from './fourohfour.module.scss'
-
+ 
 const NotFound= () => (
   <Layout>
     <main className={fourOhFourStyles.fourOhFourContainer}>
