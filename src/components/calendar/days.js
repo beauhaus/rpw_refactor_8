@@ -12,8 +12,11 @@ const DaysGrid = ({ ownData, monthCheck, dayClick }) => {
         <div className={dayStyles.container}>
             <div className={monthCheck && fullDate === presentDay ? dayStyles.currentDate : dayStyles.calendarDay}
                 onClick={() => dayClick(fullDate)}
+                onKeyDown={() => dayClick(fullDate)}
+                role="button"
+                tabIndex={Number(formedDay)}
             >
-                <button>{formedDay}</button>
+                <div className={dayStyles.dayNumber}>{formedDay}</div>
                 {evtArr.map((item, idx) => (
                     <p key={idx} className={item.daytag}>{item.slug}</p>
                 ))}

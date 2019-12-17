@@ -28,7 +28,6 @@ const DayPreview = ({ previewDate }) => {
 
     /***********************/
     return (
-
         <div className={dayPreviewStyles.container}>
             <h1 ref={elem => dateRef = elem}>{moment(previewDate).format("MMM Do")}</h1>
             <ul ref={elem => listRef = elem}
@@ -38,7 +37,6 @@ const DayPreview = ({ previewDate }) => {
                         <p>{item.event.title}</p>
                         <p>{item.event.hours}</p>
                         <hr />
-                        <p>test</p>
                         <p>{item.event.desc}</p>
                         {/* <Link to={item.event.slug}>find out more!</Link> */}
                     </li>
