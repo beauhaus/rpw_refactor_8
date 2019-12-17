@@ -12,13 +12,13 @@ module.exports = {
     'gatsby-plugin-sass',
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
-    {
+     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        name: "posts",
-        path: "posts"
+        name: "eventposts",
+        path: "eventposts"
       }
-    }, 
+    },
     {
       resolve: 'gatsby-plugin-mdx',
       options: {
