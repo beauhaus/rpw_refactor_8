@@ -18,7 +18,7 @@ const DaysGrid = ({ ownData, monthCheck, dayClick }) => {
             >
                 <div className={dayStyles.dayNumber}>{formedDay}</div>
                 {evtArr.map((item, idx) => (
-                    <p key={idx} className={item.daytag}>{item.slug}</p>
+                    <p key={idx} className={dayStyles[`${item.stylecode}`]} >{item.slug}</p>
                 ))}
             </div>
         </div>

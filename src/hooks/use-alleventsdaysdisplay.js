@@ -12,6 +12,7 @@ const useEvents = (searchParam) => {
             hours
             slug
             dates
+            stylecode
           }
           excerpt
         }
@@ -23,7 +24,7 @@ const useEvents = (searchParam) => {
 
   // return evtsArr;
 
-
+// console.log("hook cc: ", evtsArr[0])
 
 return evtsArr.map(item => ({
     title: item.event.title,
@@ -32,7 +33,8 @@ return evtsArr.map(item => ({
     tags: item.event.tags,
     slug: item.event.slug,
     hours: item.event.hours,
-    excerpt: item.excerpt
+    excerpt: item.excerpt,
+    stylecode: item.event.stylecode
   }))
 
 }

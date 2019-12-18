@@ -7,6 +7,7 @@
     padding: 2px;
     background: rgba(255, 255, 255, 0.1);
     margin: 1px;
+
     &:hover {
         background: rgba(255, 255, 255, 0.3);
         cursor: pointer;
@@ -15,7 +16,11 @@
     &>div {
         width: 100%;
         height: 100%;
-        &:focus { outline: 1px solid rgba(231, 231, 231, 0.7); }
+
+        &:focus {
+            outline: 1px solid rgba(231, 231, 231, 0.7);
+        }
+
         p {
             border-radius: 2px;
             font-size: 0.55rem;
@@ -26,15 +31,17 @@
             opacity: 0.6;
             height: 15%;
         }
+
         &:hover {
-            & > p {
+            &>p {
                 font-size: 0.57rem;
                 font-weight: 400;
                 opacity: 1;
-    
+
             }
         }
     }
+
     .day-number {
         width: 32px;
         display: block;
@@ -42,20 +49,68 @@
         color: var(--primary-magenta);
         box-shadow: inset -1px -1px 0px 0px var(--primary-midnightblue);
     }
+
     .current-date {
         background: rgba(163, 163, 163, 0.3);
-        & > p {
+
+        &>p {
             font-weight: 500;
             opacity: 1;
             color: #fff;
-        }        
-        & > .day-number {
+        }
+
+        &>.day-number {
             font-weight: 400;
-            background:rgba(102, 102, 102, 0.1);
+            background: rgba(102, 102, 102, 0.1);
         }
     }
-}
 
-.test {
-    color: #f0f0f0;
+    /********THESE STYLES ARE FED INTO 
+*  CLASSNAMES FROM DATA 
+*  THEY DO NOT CONFORM TO CSS MODULES RULES, SO THEY ARE PLACED HERE
+*******************/
+    .gameClass {
+        color: #000;
+        background: #bd9767;
+    }
+
+    .show {
+        color: #000;
+        background: #fdb6ff;
+    }
+
+    .meeting {
+        color: #000;
+        background: #6fdeff;
+    }
+
+    .party-class {
+        color: #000;
+        background: #b0ecbb;
+    }
+
+    .chess-beginner {
+        color: #fff;
+        background: #8d749c;
+    }
+
+    .chess-intermediate {
+        color: #fff;
+        background: #a67ac0;
+    }
+
+    .chess-advanced {
+        color: #fff;
+        background: #b46edd;
+    }
+
+    .oilpainting-beginner {
+        color: #ffffff;
+        background: #dd6eaf;
+    }
+
+    .party-private {
+        color: #eee;
+        background: maroon;
+    }
 }

@@ -10,9 +10,7 @@ import monthGridStyles from './monthgrid.module.scss';
 
 
 const MonthGrid = ({ selectedDate, daysArr, dayClick }) => {
-    // console.log("selectedMonth: monthGrid", "")
     const dayData = eventsDaysdisplay()
-    console.log("DD: ", dayData)
     /********** Today-Highlight Check **********/
     const currentMonth = moment(selectedDate).format("M")
     const monthCheck = (currentMonth === currentMonth); // eslint-disable-line no-self-compare
@@ -36,8 +34,8 @@ const MonthGrid = ({ selectedDate, daysArr, dayClick }) => {
                     let hasEvt = evtItem.datesArr.indexOf(item.own.fullDate)
                     return hasEvt !== -1;
                 })
-                filteredDB.map(fdbitem => (
-                    item.own.evtArr.push({ slug: fdbitem.slug, daytag: fdbitem.daytag })
+                filteredDB.map(fltdbitem => (
+                    item.own.evtArr.push({ slug: fltdbitem.slug, stylecode: fltdbitem.stylecode })
                 ))
                 return (
                     <Days
