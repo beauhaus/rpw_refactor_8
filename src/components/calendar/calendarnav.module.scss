@@ -13,7 +13,7 @@
     align-items: center;
 
     .sub-container {
-        width: 100%;
+        width: 100vw;
         height: 8vh;       
         position: relative; //✅ for pos of h1
 
@@ -23,7 +23,7 @@
             left: 50%;
             transform: translate(-50%, -50%);// centering
             font-weight: 100;
-            font-size: 3rem;
+            font-size: 2.5rem;
             color: $primary-magenta;
             height: 5vh;
             width: 60vw;
@@ -46,7 +46,8 @@
             display: flex;
             justify-content: center;
             transition: all .4s ease-in-out;
-            bottom: 1vh;
+            top: -1vh;
+            // border: 1px solid purple;
             &:hover {
                 color:$primary-midnightblue;
                 text-shadow: 2px 2px #000;
@@ -57,7 +58,7 @@
             }
             &:last-of-type {
                 // border: 1px solid yellow;
-                right:2vw;
+                right:4vw;
             }
         }
     }
@@ -74,8 +75,10 @@
         grid-row: 1;
         grid-column: 1/3;
         .sub-container {
+            width: 80vw;
             h1 {
                 width: 40vw;
+                font-size: 3rem;
                 // border: 1px solid green;
             }
         }

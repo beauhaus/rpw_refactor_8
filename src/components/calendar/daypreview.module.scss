@@ -19,10 +19,11 @@
 
     & > h1 { /*dateRef*/
         opacity: 0;
-        font-weight: 100;
+        font-weight: 300;
         text-align: center;
-        font-style: oblique;
-        font-size: 2rem;
+        // font-style: oblique;
+        font-style: normal;
+        font-size: 1.8rem;
         color: $primary-midnightblue;
         transform: translateY(-200px);
     }
@@ -36,6 +37,9 @@
         & > li {
             padding-left: 1vw;
             margin-top: 3vh;
+            p {
+                font-size: 0.8rem;
+            }
         }
         .gameClass {
             color: #fff;
