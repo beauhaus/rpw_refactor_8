@@ -25,10 +25,10 @@
             font-size: 0.55rem;
             display: inline-block;
             margin-right: 2px;
-            
-            color: transparent;
-            width: 5px;
-            height: 5px;
+            margin-top: -1vh;
+            color: rgba(0,0,0,0.1);
+            width: 10px;
+            height: 10px;
             border-radius: 50%;
             box-shadow: 1px 1px 2px 0px rgb(36, 36, 36);
         }
@@ -155,6 +155,7 @@
                 height: 0.65rem;
                 color: transparent;
                 width: 100%;
+                display: block;
                 // align-self: end;
                 &:first-of-type {
                     margin-top:5vh;
@@ -184,7 +185,6 @@
     
         .current-date {
             background: rgba(101, 197, 235, 0.4);
-    
             &>p {
                 font-weight: 500;
                 opacity: 1;
