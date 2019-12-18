@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react'
 import {gsap}  from "gsap";
 import moment from 'moment';
+import {Link} from 'gatsby'
 import dayPreviewStyles from './daypreview.module.scss';
 import allEventsData from '../../hooks/use-alleventspreview';
 
@@ -34,12 +35,11 @@ const DayPreview = ({ previewDate }) => {
                 className={dayPreviewStyles.previewList} >
                 {db.map((item, idx) => (
                     <li key={idx} className={dayPreviewStyles[`${item.event.stylecode}`]}>
-                        <p>{item.event.title}</p>
-                        <p>{item.event.stylecode}</p>
-                        <p>{item.event.hours}</p>
+                        <p>{item.event.title || "title"}</p>
+                        <p>{item.event.hours|| "hours"}</p>
+                        <p>{item.event.desc|| "description"}</p>
+                        <Link to={item.event.slug}>{item.event.slug? "find out more!":"link to event page"}</Link>
                         <hr />
-                        <p>{item.event.desc}</p>
-                        {/* <Link to={item.event.slug}>find out more!</Link> */}
                     </li>
                 ))}
             </ul>

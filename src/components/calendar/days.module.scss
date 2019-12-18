@@ -2,13 +2,13 @@
 
 .container {
     background: transparent;
-    border-bottom-width: 0;
-    border-right-width: 0;
+    border-radius: 5px;
     font-weight: 100;
     color: $primary-midnightblue;
     padding: 2px;
     background: rgba(255, 255, 255, 0.1);
     margin: 1px;
+
     &:hover {
         background: rgba(255, 255, 255, 0.3);
         cursor: pointer;
@@ -48,6 +48,7 @@
         display: block;
         height: 30px;
         color: $primary-magenta;
+        border-radius: 5px;
         box-shadow: inset -1px -1px 0px 0px $primary-midnightblue;
     }
 
@@ -57,7 +58,7 @@
         &>p {
             font-weight: 500;
             opacity: 1;
-            color: #fff;
+            // color: #fff;
         }
 
         &>.day-number {
@@ -91,18 +92,22 @@
     }
 
     .chess-beginner {
-        color: #fff;
-        background: lighten($secondary-abbeygrey, 30%);
+        color: #252525;
+        background: lighten($secondary-weborange, 30%);
+    }
+    .robotics-beginner {
+        color: #000;
+        background: #6ed1a8;
     }
 
     .chess-intermediate {
-        color: #fff;
-        background: lighten($secondary-abbeygrey, 15%);
+        color: #252525;
+        background: lighten($secondary-weborange, 15%);
     }
 
     .chess-advanced {
-        color: #fff;
-        background: lighten($secondary-abbeygrey, 0%);
+        color: #252525;
+        background: lighten($secondary-weborange, 0%);
 
     }
 
