@@ -30,6 +30,7 @@
             line-height: 5vh;
         } 
         button.cal-nav-btn {
+            z-index: 2;
             font-weight: bold;
             font-size: 2rem;
             border-width: 0;
@@ -52,11 +53,11 @@
             }
             &:first-of-type {
                 // border: 1px solid red;
-                left:8vw;
+                left:2vw;
             }
             &:last-of-type {
                 // border: 1px solid yellow;
-                right:8vw;
+                right:2vw;
             }
         }
     }
