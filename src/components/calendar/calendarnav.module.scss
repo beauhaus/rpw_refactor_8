@@ -6,26 +6,89 @@
     align-content: center;
     border-radius: 6px;
     padding: 1%;
-    // display: none;
-    h1 {
-        font-weight: 100;
-        font-size: 3rem;
-        // line-height: 10px;
-        color: var(--primary-magenta);
-    }
-    button {
-        font-weight: bold;
-        font-size: 2rem;
-        line-height: 16px;
-        border-width: 0;
-        color: #fff;
-        background: transparent;
-        width: 6vw;
-        text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.8);
-        outline: none;
-        &:hover {
-            // background: rgba(255, 255,255,0.3);
-            color: teal;
+    // border: 1px dashed green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .sub-container {
+        width: 50%;
+        height: 8vh;
+        // border: 1px solid black;
+        display: flex;
+        justify-content: space-between;
+
+        h1 {
+            font-weight: 100;
+            font-size: 3rem;
+            color: var(--primary-magenta);
+            // border: 1px dashed green;
+            height: 5vh;
+            line-height: 5vh;
+            margin: auto;
+        }
+
+        button.cal-nav-btn {
+            font-weight: bold;
+            font-size: 2rem;
+            border-width: 0;
+            color: #fff;
+            background: transparent;
+            width: 6vw;
+            height: 100%;
+            text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.8);
+            outline: none;
+            position: relative;
+            text-align: center;
+            // border: 1px dashed purple;
+            height: auto;
+            margin-top: 0;
+            display: flex;
+            // flex-direction: column;
+            justify-content: center;
+            display: grid;
+            span {
+                margin: auto;
+                display: inline-block; //block?
+                // position: absolute;
+                width: 40px;
+                height: 40px;
+                background: transparent;
+                border-top: 2px solid var(--secondary-abbeygrey);
+                border-left: 2px solid var(--secondary-abbeygrey);
+                transition: all .3s ease-in-out;
+                text-decoration: none;
+                color: transparent;
+                // border: 1px solid red;
+                &:hover {
+                    border-color: var(--primary-midnightblue);
+                    border-width: 6px;
+                }
+
+                &.prev {
+                    transform: rotate(-45deg);
+                    // left: 2vw;
+                    // background: fuchsia !important;
+                }
+
+                &.next {
+                    transform: rotate(135deg);
+                    // right: 2vw;
+                }
+
+                &:before {
+                    display: block;
+                    height: 200%;
+                    width: 200%;
+                    margin-left: -50%;
+                    margin-top: -50%;
+                    content: "";
+                    transform: rotate(45deg);
+                    color: transparent;
+                }
+
+            }
         }
     }
+
 }
