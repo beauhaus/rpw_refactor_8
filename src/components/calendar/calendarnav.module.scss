@@ -2,95 +2,81 @@
 
 .nav {
     grid-row: 1;
-    grid-column: 1/3;
+    grid-column: 1;
     display: flex;
     justify-content: space-between;
     align-content: center;
     border-radius: 6px;
     padding: 1%;
-    // border: 1px dashed green;
-    display: flex;
+    display: inline-block;
     justify-content: center;
     align-items: center;
 
     .sub-container {
-        width: 50%;
-        height: 8vh;
-        // border: 1px solid black;
-        display: flex;
-        justify-content: space-between;
+        width: 100%;
+        height: 8vh;       
+        position: relative; //✅ for pos of h1
 
         h1 {
+            position: absolute;//✅
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);// centering
             font-weight: 100;
             font-size: 3rem;
             color: $primary-magenta;
-            // border: 1px dashed green;
             height: 5vh;
+            width: 60vw;
             line-height: 5vh;
-            margin: auto;
-        }
-
+        } 
         button.cal-nav-btn {
             font-weight: bold;
             font-size: 2rem;
             border-width: 0;
-            color: #fff;
+            color: $primary-robinseggblue;
             background: transparent;
             width: 6vw;
             height: 100%;
-            text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.8);
             outline: none;
-            position: relative;
+            font-size: 4rem;
+            position: absolute;
             text-align: center;
-            // border: 1px dashed purple;
-            height: auto;
-            margin-top: 0;
+            text-shadow: 1px 1px rgba(0,0,0,0.4);
             display: flex;
-            // flex-direction: column;
             justify-content: center;
-            display: grid;
-            span {
-                margin: auto;
-                display: inline-block; //block?
-                // position: absolute;
-                width: 40px;
-                height: 40px;
-                background: transparent;
-                border-top: 2px solid $secondary-abbeygrey;
-                border-left: 2px solid $secondary-abbeygrey;
-                transition: all .3s ease-in-out;
-                text-decoration: none;
-                color: transparent;
+            transition: all .4s ease-in-out;
+            bottom: 1vh;
+            &:hover {
+                color:$primary-midnightblue;
+                text-shadow: 2px 2px #000;
+            }
+            &:first-of-type {
                 // border: 1px solid red;
-                &:hover {
-                    border-color: $primary-midnightblue;
-                    border-width: 6px;
-                }
-
-                &.prev {
-                    transform: rotate(-45deg);
-                    // left: 2vw;
-                    // background: fuchsia !important;
-                }
-
-                &.next {
-                    transform: rotate(135deg);
-                    // right: 2vw;
-                }
-
-                &:before {
-                    display: block;
-                    height: 200%;
-                    width: 200%;
-                    margin-left: -50%;
-                    margin-top: -50%;
-                    content: "";
-                    transform: rotate(45deg);
-                    color: transparent;
-                }
-
+                left:8vw;
+            }
+            &:last-of-type {
+                // border: 1px solid yellow;
+                right:8vw;
             }
         }
     }
 
+}
+
+
+/*************************************************/
+/************* iPad and larger  ******************/
+/*************************************************/
+
+@media screen and (min-width: 768px) {
+    .nav {
+        grid-row: 1;
+        grid-column: 1/3;
+        .sub-container {
+            h1 {
+                width: 40vw;
+                // border: 1px solid green;
+            }
+        }
+   }
 }

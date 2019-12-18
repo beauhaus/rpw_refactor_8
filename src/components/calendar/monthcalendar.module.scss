@@ -1,17 +1,17 @@
 @import "../../styles/variables.scss";
 
 .container {
-    width: 80vw;
-    height: 80vh;
-    margin: 2vh auto;
+    width: 100vw;
+    height: 92vh; /*account for header */
+    margin: 2vh auto; /* keep?*/
     display: grid;
     padding: 4px;
-    grid-template-columns:1fr 2fr;
-    grid-template-rows: 15vh 65vh;
+    // grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 9vh 40vh 42vh;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     background: $primary-mistgrey;
     border-radius: 6px;
-    box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -19,5 +19,15 @@
 /************* iPad and larger  ******************/
 /*************************************************/
 
-// @media screen and (min-width: 768px) {
-// }
+@media screen and (min-width: 768px) {
+
+    .container {
+        width: 80vw;
+        height: 80vh;
+        margin: 2vh auto;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 15vh 65vh;
+        border-radius: 6px;
+        box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.5);
+    }
+}

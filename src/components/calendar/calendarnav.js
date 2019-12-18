@@ -4,16 +4,16 @@ import moment from 'moment'
 import calNavStyles from './calendarnav.module.scss';
 
 const CalNav = ({ decMonth, incMonth, selectedDate }) => {
-    // console.log("> calNav", selectedDate)
+    console.log("> calNavStyles", calNavStyles)
     return (
         <nav className={calNavStyles.nav}>
             <div className={calNavStyles.subContainer}>
-                <button className={`${calNavStyles.prevBtn} ${calNavStyles.calNavBtn}`} onClick={decMonth}>
-                    <span className={calNavStyles.prev}></span>
+                <button className={calNavStyles.calNavBtn} onClick={decMonth}>
+                    &#x2039;
                 </button>
                 <h1>{moment(selectedDate).format("MMMM")}</h1>
-                <button className={`${calNavStyles.nextMonth} ${calNavStyles.calNavBtn}`} onClick={incMonth}>
-                    <span className={calNavStyles.next}></span>
+                <button className={calNavStyles.calNavBtn} onClick={incMonth}>
+                    &#x203A;
                 </button>
             </div>
         </nav>
