@@ -46,7 +46,6 @@ const MonthCalendar = () => {
                 daysArr={daysArr}
                 selectedDate={selectedDate}
                 dayClick={selectDay}
-                // data={data}
             />
         </div>
     )

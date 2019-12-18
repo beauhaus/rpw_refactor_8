@@ -29,7 +29,7 @@ const DayPreview = ({ previewDate }) => {
     /***********************/
     return (
         <div className={dayPreviewStyles.container}>
-            <h1 ref={elem => dateRef = elem}>{moment(previewDate).format("MMM Do")}</h1>
+            <h1 ref={elem => dateRef = elem}>{moment(previewDate).format("MMM DD")}</h1>
             <ul ref={elem => listRef = elem}
                 className={dayPreviewStyles.previewList} >
                 {db.map((item, idx) => (

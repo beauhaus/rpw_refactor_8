@@ -10,6 +10,7 @@
     box-shadow: inset 0px 4px 6px 0px rgba(0, 0, 0, 0.3);
     max-height: 80%;
     text-align: left;
+    overflow:auto;
 
     & > h1 { /*dateRef*/
         opacity: 0;
@@ -20,7 +21,7 @@
         color: var(--primary-magenta);
         transform: translateY(-200px);
     }
-    & > ul {
+    & > ul.preview-list {
         opacity: 0;
         transform: translateY(30px);
     }
@@ -32,7 +33,3 @@
     color: var(--primary-midnightblue);
 
 }
-// @keyframes fadeIn {
-//     0% {opacity: 0;}
-//     100% {opacity: 1;}
-// }

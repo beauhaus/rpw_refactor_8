@@ -1,5 +1,4 @@
 import React from 'react'
-import styled from "styled-components"
 import moment from 'moment'
 
 import PrevMonthBuffer from './prevmonthbuffer'
@@ -7,19 +6,8 @@ import Days from './days'
 
 import eventsDaysdisplay from '../../hooks/use-alleventsdaysdisplay'
 
+import monthGridStyles from './monthgrid.module.scss';
 
-
-const Month = styled.div`  
-    grid-row: 2;
-    grid-column: 2;
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    // border: 2px dashed fuchsia;
-     &  span {
-        // border: 1px dashed white;
-    }
-`
 
 const MonthGrid = ({ selectedDate, daysArr, dayClick }) => {
     // console.log("selectedMonth: monthGrid", "")
@@ -29,9 +17,18 @@ const MonthGrid = ({ selectedDate, daysArr, dayClick }) => {
     const currentMonth = moment(selectedDate).format("M")
     const monthCheck = (currentMonth === currentMonth); // eslint-disable-line no-self-compare
     const firstDay = moment(selectedDate).startOf("month"); //String
-
+    
     return (
-        <Month>
+        <div className={monthGridStyles.container}>
+            <div className={monthGridStyles.smtwtfs}>
+            <p>s</p>
+            <p>m</p>
+            <p>t</p>
+            <p>w</p>
+            <p>t</p>
+            <p>f</p>
+            <p>s</p>
+            </div>
             <PrevMonthBuffer firstDay={firstDay} selectedDate={selectedDate} />
             {daysArr.map((item, idx) => {
                 // console.log("IT: ", item.own.fullDate)
@@ -51,7 +48,7 @@ const MonthGrid = ({ selectedDate, daysArr, dayClick }) => {
                     />
                 )
             })}
-        </Month>
+        </div>
     )
 
 }

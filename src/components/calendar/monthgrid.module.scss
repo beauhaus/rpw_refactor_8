@@ -1,0 +1,24 @@
+.container {
+    grid-row: 2;
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 5vh repeat(6, 1fr);
+    .smtwtfs {
+        grid-row: 1;
+        grid-column: 1/8;
+        // border: 1px solid yellow;
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: 1fr;
+         p {
+            font-size: 1.3rem;
+            text-transform: uppercase;
+            font-weight: 500;
+            color: #ccc;
+            // outline: 1px dashed slateblue;
+            margin-bottom: 0;
+        }
+    }
+}
+
