@@ -1,3 +1,5 @@
+@import "../../styles/variables.scss";
+
 .container {
     grid-row: 2;
     grid-column: 2;
@@ -15,7 +17,7 @@
             font-size: 1.3rem;
             text-transform: uppercase;
             font-weight: 500;
-            color: #ccc;
+            color: rgb(128, 128, 128);
             // outline: 1px dashed slateblue;
             margin-bottom: 0;
         }

@@ -1,13 +1,14 @@
+@import "../../styles/variables.scss";
+
 .container {
     background: transparent;
     border-bottom-width: 0;
     border-right-width: 0;
     font-weight: 100;
-    color: var(--primary-midnightblue);
+    color: $primary-midnightblue;
     padding: 2px;
     background: rgba(255, 255, 255, 0.1);
     margin: 1px;
-
     &:hover {
         background: rgba(255, 255, 255, 0.3);
         cursor: pointer;
@@ -46,8 +47,8 @@
         width: 32px;
         display: block;
         height: 30px;
-        color: var(--primary-magenta);
-        box-shadow: inset -1px -1px 0px 0px var(--primary-midnightblue);
+        color: $primary-magenta;
+        box-shadow: inset -1px -1px 0px 0px $primary-midnightblue;
     }
 
     .current-date {
@@ -70,47 +71,48 @@
 *  THEY DO NOT CONFORM TO CSS MODULES RULES, SO THEY ARE PLACED HERE
 *******************/
     .gameClass {
-        color: #000;
-        background: #bd9767;
+        color: #fff;
+        background: $secondary-weborange;
     }
 
     .show {
         color: #000;
-        background: #fdb6ff;
+        background: $secondary-internatorange;
     }
 
     .meeting {
         color: #000;
-        background: #6fdeff;
+        background: $secondary-weborange;
     }
 
     .party-class {
         color: #000;
-        background: #b0ecbb;
+        background: $secondary-daisybushpurple;
     }
 
     .chess-beginner {
         color: #fff;
-        background: #8d749c;
+        background: lighten($secondary-abbeygrey, 30%);
     }
 
     .chess-intermediate {
         color: #fff;
-        background: #a67ac0;
+        background: lighten($secondary-abbeygrey, 15%);
     }
 
     .chess-advanced {
         color: #fff;
-        background: #b46edd;
+        background: lighten($secondary-abbeygrey, 0%);
+
     }
 
     .oilpainting-beginner {
         color: #ffffff;
-        background: #dd6eaf;
+        background: $secondary-daisybushpurple;
     }
 
     .party-private {
         color: #eee;
-        background: maroon;
+        background: royalblue;
     }
 }

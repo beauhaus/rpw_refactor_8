@@ -33,8 +33,9 @@ const DayPreview = ({ previewDate }) => {
             <ul ref={elem => listRef = elem}
                 className={dayPreviewStyles.previewList} >
                 {db.map((item, idx) => (
-                    <li key={idx}>
+                    <li key={idx} className={dayPreviewStyles[`${item.event.stylecode}`]}>
                         <p>{item.event.title}</p>
+                        <p>{item.event.stylecode}</p>
                         <p>{item.event.hours}</p>
                         <hr />
                         <p>{item.event.desc}</p>

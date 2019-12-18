@@ -12,6 +12,7 @@ const useEvents = (searchParam) => {
             hours
             slug
             dates
+            stylecode
           }
           excerpt
         }
