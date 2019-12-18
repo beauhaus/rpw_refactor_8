@@ -10,6 +10,7 @@
     margin: 1px;
     overflow: hidden;
     display: grid;
+    // border: 1px solid blue;
 
     &>div {
         width: 100%;
@@ -19,17 +20,20 @@
         // &:focus {
         //     outline: 1px solid rgba(231, 231, 231, 0.7);
         // }
+        display: grid;
+        align-content: flex-end;
 
         p {
             border-radius: 2px;
-            font-size: 0.55rem;
-            display: inline-block;
-            margin-right: 2px;
-            margin-top: -1vh;
-            color: rgba(0,0,0,0.1);
-            width: 10px;
-            height: 10px;
+            font-size: 0.01rem;
+            display: block;
+            margin: 2px;
+            margin-top: -4vh;
+            // color: white;
+            width: 5px;
+            height: 5px;
             border-radius: 50%;
+            overflow: hidden;
             box-shadow: 1px 1px 2px 0px rgb(36, 36, 36);
         }
     }

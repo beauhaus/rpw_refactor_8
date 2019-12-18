@@ -6,7 +6,8 @@
     grid-column: 1;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: 3vh repeat(6, 1fr);
+    grid-template-rows: 4vh repeat(6, 6vh);
+    // border: 1px solid red;
 
     .smtwtfs {
         grid-row: 1;
