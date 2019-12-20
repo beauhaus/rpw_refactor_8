@@ -91,6 +91,7 @@
         color: #252525;
         background: lighten($secondary-weborange, 30%);
     }
+
     .robotics-beginner {
         color: #000;
         background: #6ed1a8;
@@ -132,11 +133,12 @@
         background: rgba(255, 255, 255, 0.1);
         margin: 1px;
         display: flex;
+
         &:hover {
             background: rgba(255, 255, 255, 0.3);
             cursor: pointer;
         }
-    
+
         &>div {
             width: 100%;
             height: 100%;
@@ -144,10 +146,11 @@
             display: flex;
             flex-direction: column;
             align-content: flex-end;
+
             &:focus {
                 outline: 1px solid rgba(231, 231, 231, 0.7);
             }
-    
+
             p {
                 border-radius: 2px;
                 font-size: 0.55rem;
@@ -160,41 +163,43 @@
                 color: transparent;
                 width: 100%;
                 display: block;
+
                 // align-self: end;
                 &:first-of-type {
-                    margin-top:5vh;
+                    margin-top: 5vh;
                 }
             }
-    
+
             &:hover {
                 &>p {
                     font-size: 0.57rem;
                     font-weight: 400;
                     opacity: 1;
-    
+
                 }
             }
         }
-    
+
         .day-number {
             width: 32px;
             position: absolute;
-            top:0;
+            top: 0;
             left: 0;
             height: 30px;
             color: $primary-magenta;
             border-radius: 5px;
             box-shadow: inset -1px -1px 0px 0px $primary-midnightblue;
         }
-    
+
         .current-date {
             background: rgba(101, 197, 235, 0.4);
+
             &>p {
                 font-weight: 500;
                 opacity: 1;
                 // color: #fff;
             }
-    
+
             &>.day-number {
                 font-weight: 400;
                 background: rgba(102, 102, 102, 0.1);

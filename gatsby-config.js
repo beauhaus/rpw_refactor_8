@@ -12,7 +12,7 @@ module.exports = {
     'gatsby-plugin-sass',
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
-     {
+    {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: "eventposts",
@@ -34,6 +34,12 @@ module.exports = {
       options: {
         name: "images",
         path: "images"
+      }
+    },
+    {
+      resolve: 'gatsby-source-instagram',
+      options: {
+        username: "recess_playworks"
       }
     },
   ],

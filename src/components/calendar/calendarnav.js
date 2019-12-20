@@ -4,7 +4,7 @@ import moment from 'moment'
 import calNavStyles from './calendarnav.module.scss';
 
 const CalNav = ({ decMonth, incMonth, selectedDate }) => {
-    console.log("> calNavStyles", calNavStyles)
+    // console.log("> calNavStyles", calNavStyles)
     return (
         <nav className={calNavStyles.nav}>
             <div className={calNavStyles.subContainer}>

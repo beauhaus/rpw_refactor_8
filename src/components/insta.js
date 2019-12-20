@@ -1,4 +1,4 @@
-import React from 'react';
+ import React from 'react';
 import Image from 'gatsby-image'
 
 import instaStyles from './insta.module.scss';
@@ -15,7 +15,7 @@ const Insta = () => {
             <a className={instaStyles.instaLink} href="https://instagram.com/recess_playworks"  target="_blank" rel="noopener noreferrer">
                     @{username}
                 </a>
-                <div className={instaStyles.imgContainer}>
+                {/* <div className={instaStyles.imgContainer}>
                     {instaPhotos.map(photo=> (
                         <a key={photo.id}  href={`https://instagram.com/p/${photo.id}/`}>
                             <Image 
@@ -23,7 +23,7 @@ const Insta = () => {
                             alt={photo.caption}/>
                         </a>
                     ))}
-                </div>
+                </div> */}
             </section>
         </main>
     )

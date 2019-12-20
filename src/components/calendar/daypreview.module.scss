@@ -8,13 +8,15 @@
     // background: #fff;
     margin: 1%;
     padding: 1%;
+    
     font-weight: 300;
-    overflow: hidden;
+    // overflow: hidden;
     box-shadow: inset 0px 4px 6px 0px rgba(0, 0, 0, 0.3);
     max-height: 95%;
     max-width: 95vw;
     text-align: left;
-    overflow:auto;
+    -webkit-overflow-scrolling: touch;
+    overflow-y: scroll;    
     // border: 2px dashed coral;
     border-radius: 5px;
 
@@ -35,6 +37,7 @@
         font-size: 1rem;
         color: primary-midnightblue;
         padding-left: 0;
+        padding: 0 0.5rem 0 0;
         & > li {
             padding-left: 1vw;
             margin-top: 3vh;

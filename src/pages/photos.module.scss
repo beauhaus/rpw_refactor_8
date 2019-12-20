@@ -1,0 +1,33 @@
+@import '../styles/variables.scss';
+
+.photos-container {
+    // background: linear-gradient(35deg, var(--insta-pink)0%, var(--insta-pink-lt)70% );
+    // background: linear-gradient(35deg, var(--muted-pink)0%, var(--colorC) 70% );
+    
+    background: var(--muted-pink);
+
+    grid-row: 2;
+    text-align: center;
+    width: 100vw;
+    // height: 200vh;
+    min-height: 100vh;
+    // padding-top: 2vh;
+    // h1 {
+        // color: rgb(199, 199, 199);
+        // color: red;
+        // font-weight: 200;
+        // margin-top: 3vh;
+        // font-size: 3rem;
+    // }
+}
+
+
+/*************************************************/
+/************* iPad and larger  ******************/
+/*************************************************/
+
+@media screen and (min-width: 768px) {
+    main.photos-container {
+        opacity: 1;
+    }
+}
