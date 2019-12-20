@@ -15,8 +15,8 @@
     max-height: 95%;
     max-width: 95vw;
     text-align: left;
-    -webkit-overflow-scrolling: auto;
-    overflow-y: scroll;    
+    overflow-y: scroll; /* has to be scroll, not auto */
+    -webkit-overflow-scrolling: touch;  
     border: 2px dashed coral;
     border-radius: 5px;
 
