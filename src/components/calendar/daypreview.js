@@ -4,6 +4,55 @@ import moment from 'moment';
 import {Link} from 'gatsby'
 import dayPreviewStyles from './daypreview.module.scss';
 import allEventsData from '../../hooks/use-alleventspreview';
+import style from 'styled-components'
+
+const Scrollable = style.div`
+
+    -webkit-overflow-scrolling: touch;
+    overflow-y: scroll;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    grid-row: 3;
+    grid-column: 1;
+    background:lighten( $primary-robinseggblue, 0% );
+    margin: 1%;
+    padding: 1%;
+    
+    font-weight: 300;
+    box-shadow: inset 0px 4px 6px 0px rgba(0, 0, 0, 0.3);
+    max-height: 95%;
+    max-width: 95vw;
+    text-align: left;
+    border: 2px dashed brown;
+    border-radius: 5px;
+    & > h1 { /*dateRef*/
+        opacity: 0;
+        font-weight: 300;
+        text-align: center;
+        // font-style: oblique;
+        font-style: normal;
+        font-size: 1.8rem;
+        // color: $primary-midnightblue;
+        color: navy;
+        transform: translateY(-200px);
+    }
+    & > ul.preview-list {
+        opacity: 0;
+        transform: translateY(30px);
+        font-size: 1rem;
+        // color: primary-midnightblue;
+        color: slateblue;
+        padding-left: 0;
+        padding: 0 0.5rem 0 0;
+        & > li {
+            padding-left: 1vw;
+            margin-top: 3vh;
+            p {
+                font-size: 0.8rem;
+            }
+        }
+    }
+}
+`;
 
 const DayPreview = ({ previewDate }) => {
     const [DBCallParameter, setDBCallParameter] = useState('default')
@@ -26,10 +75,12 @@ const DayPreview = ({ previewDate }) => {
     }, [previewDate])
 
     const db = allEventsData(DBCallParameter)
-
+    // let overflow = {
+    //     "  -webkit-overflow-scrolling": "touch"
+    // }
     /***********************/
     return (
-        <div className={dayPreviewStyles.container}>
+        <Scrollable >
             <h1 ref={elem => dateRef = elem}>{moment(previewDate).format("MMM DD")}</h1>
             <ul ref={elem => listRef = elem}
                 className={dayPreviewStyles.previewList} >
@@ -43,7 +94,7 @@ const DayPreview = ({ previewDate }) => {
                     </li>
                 ))}
             </ul>
-        </div>
+        </Scrollable>
     )
 }
 
