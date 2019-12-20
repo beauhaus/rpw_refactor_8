@@ -11,12 +11,12 @@
     display: inline-block;
     justify-content: center;
     align-items: center;
-
+    
     .sub-container {
         width: 100vw;
         height: 8vh;       
         position: relative; //✅ for pos of h1
-
+        
         h1 {
             position: absolute;//✅
             top: 50%;
