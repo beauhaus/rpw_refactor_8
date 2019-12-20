@@ -2,7 +2,7 @@ import React from 'react'
 import Layout from '../components/layout'
 import photosStyles from './photos.module.scss'
 
-import Insta from '../components/insta'
+// import Insta from '../components/insta'
 
 const PhotosPage = () => {
     // console.log(Insta)
@@ -10,7 +10,7 @@ const PhotosPage = () => {
         <Layout>
             <main className={photosStyles.photosContainer}>
                 <section className={photosStyles.photosContentContainer}>
-                    <Insta/>
+                    {/* <Insta/> */}
                 </section>
             </main>
         </Layout>

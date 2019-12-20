@@ -2,7 +2,7 @@
 import Image from 'gatsby-image'
 
 import instaStyles from './insta.module.scss';
-import useInstagram from '../hooks/use-instagram'
+// import useInstagram from '../hooks/use-instagram'
 
 const Insta = () => {
     const instaPhotos= useInstagram();
