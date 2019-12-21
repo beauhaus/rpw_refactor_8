@@ -13,8 +13,9 @@
     background: $primary-mistgrey;
     border-radius: 6px;
 
-    // position: fixed;
-    top: 7vh;
+    position: absolute;
+    z-index: 100;
+    top: 0vh;
 }
 
 
