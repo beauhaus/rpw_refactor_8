@@ -1,0 +1,241 @@
+@import "../../styles/variables.scss";
+
+.nav {
+    grid-row: 1;
+    grid-column: 1;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    border-radius: 6px;
+    padding: 1%;
+    // border: 1px dashed green;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+
+    .sub-container {
+        width: 100%;
+        height: 8vh;
+        // border: 1px solid black;
+        // display: inline-block; //✅
+        // justify-content: space-between;
+
+        position: relative; //✅
+       
+        h1 {
+            position: absolute;//✅
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);//✅
+
+            font-weight: 100;
+            font-size: 3rem;
+            color: $primary-magenta;
+            // border: 1px dashed green;
+            height: 5vh;
+            width: 60vw;
+            line-height: 5vh;
+            // margin: 0 auto; //✅
+        }
+      
+          
+        button.cal-nav-btn {
+            
+            font-weight: bold;
+            font-size: 2rem;
+            border-width: 0;
+            color: #fff;
+            background: transparent;
+            width: 6vw;
+            height: 100%;
+            text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.8);
+            outline: none;
+
+            // position: relative; //✅
+            position: absolute;
+            text-align: center;
+            
+            // border: 1px dashed purple;
+            // outline: 1px solid white;
+            height: auto;
+            margin-top: 1vh;
+            
+            display: flex;
+            justify-content: center;
+            display: grid;
+            &:first-of-type {
+                // border: 1px solid red;
+                left:2vw;
+            }
+            &:last-of-type {
+                // border: 1px solid yellow;
+                right:10vw;
+            }
+            span {
+                border-radius: 4px;
+                margin: auto;
+                display: inline-block; //block?
+                // position: absolute;
+                width: 40px;
+                height: 40px;
+                background: transparent;
+                border-top: 2px solid $secondary-abbeygrey;
+                border-left: 2px solid $secondary-abbeygrey;
+                transition: all .3s ease-in-out;
+                text-decoration: none;
+                color: transparent;
+                // border: 1px solid red;
+                &:hover {
+                    border-color: $primary-midnightblue;
+                    border-width: 6px;
+                }
+
+                &.prev{
+                    transform: rotate(-45deg);
+                    // left: 2vw;
+                }
+
+                &.next {
+                    transform: rotate(135deg);
+                    // right: 2vw;
+                }
+
+                &:before {
+                    display: block;
+                    height: 200%;
+                    width: 200%;
+                    margin-left: -50%;
+                    margin-top: -50%;
+                    content: "";
+                    transform: rotate(45deg);
+                    color: transparent;
+                }
+
+            }
+        }
+    }
+
+}
+
+
+/*************************************************/
+/************* iPad and larger  ******************/
+/*************************************************/
+
+@media screen and (min-width: 768px) {
+    .nav {
+        // grid-row: 1;
+        grid-column: 1/3;
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        border-radius: 6px;
+        padding: 1%;
+        // border: 1px dashed green;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        .sub-container {
+            width: 80%;
+            height: 8vh;
+            // border: 2px solid white;
+            display: flex;
+            justify-content: space-between;
+
+            display: inline-block; //✅ okay on phones without
+            // position: static; //✅ 
+            
+    
+            h1 {
+                font-weight: 100;
+                font-size: 3rem;
+                color: $primary-magenta;
+                // border: 1px dashed green;
+                height: 5vh;
+                line-height: 5vh;
+                margin: auto;
+            }
+    
+            button.cal-nav-btn {
+                font-weight: bold;
+                font-size: 2rem;
+                border-width: 0;
+                background: transparent;
+                width: 6vw;
+                height: 100%;
+                text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.8);
+                outline: none;
+                // position: relative; //✅? this worked
+                position: absolute;
+                
+                text-align: center;
+                // border: 2px dashed lightsalmon;
+                height: auto;
+                // margin-top: 0;
+                display: flex;
+                justify-content: center;
+                display: grid;
+
+                /*********/
+                margin-top: 0;
+
+                &:first-of-type {
+                    border: 1px solid blue;
+                    left:2vw;
+                    transform: rotate(0deg);
+                    
+                }
+                &:last-of-type {
+                    // border: 1px solid yellow;
+                    right:2vw;
+                }
+                span {
+                    margin: auto;
+                    display: inline-block; //block? inline-block?
+                    // position: absolute;
+                    width: 40px;
+                    height: 40px;
+                    background: transparent;
+                    border-top: 2px solid $secondary-abbeygrey;
+                    border-left: 2px solid $secondary-abbeygrey;
+                    transition: all .3s ease-in-out;
+                    text-decoration: none;
+                    color: transparent;
+                    // border: 1px solid red;
+
+
+                    /*******/
+                    &:hover {
+                        border-color: $primary-midnightblue;
+                        border-width: 6px;
+                    }
+    
+                    &.prev {
+                        transform: rotate(-45deg);
+                        // left: 2vw;
+                        background: fuchsia !important;
+                    }
+    
+                    &.next {
+                        transform: rotate(135deg);
+                        // right: 2vw;
+                    }
+    
+                    &:before {
+                        display: block;
+                        height: 200%;
+                        width: 200%;
+                        margin-left: -50%;
+                        margin-top: -50%;
+                        content: "";
+                        transform: rotate(45deg);
+                        color: transparent;
+                    }
+    
+                }
+            }
+        }
+    
+    }
+}
