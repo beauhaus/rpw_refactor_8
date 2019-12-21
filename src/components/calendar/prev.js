@@ -9,13 +9,16 @@ const text = Array(10)
   .map((x, index) => <div key={index}>{index}</div>);
 
 const Test = () => (
-  <div style={{ border: "1px solid #F00", padding: "32px" }}>
+  <div style={{ border: "1px solid #F00", padding: "32px" }}
+  className={prevStyles.test}
+  >
     <div
       style={{
-        backgroundColor: "rgba(0,0,0,0.2)",
-        overflow: "scroll",
-        height: 100
+        // backgroundColor: "rgba(0,0,0,0.2)",
+        // overflow: "scroll",
+        // height: 100
       }}
+      className={prevStyles.subDiv}
     >
       {text}
     </div>
