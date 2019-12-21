@@ -6,7 +6,7 @@ import prevStyles from './prev.module.scss';
 
 const text = Array(10)
   .fill(1)
-  .map((x, index) => <div>{index}</div>);
+  .map((x, index) => <div key={index}>{index}</div>);
 
 const Test = () => (
   <div style={{ border: "1px solid #F00", padding: "32px" }}>
@@ -56,7 +56,6 @@ const Prev = () => {
 
   return (
     <div className={prevStyles.container}>
--testing-
       <Locky
         className={prevStyles.locky}
       >
