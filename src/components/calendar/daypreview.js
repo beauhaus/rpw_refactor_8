@@ -2,13 +2,10 @@ import React, { useState, useEffect, useRef } from 'react'
 // import { gsap } from "gsap";
 import moment from 'moment';
 import { Link } from 'gatsby'
-import Locky from "react-locky";
 
 import allEventsData from '../../hooks/use-alleventspreview';
 
 import dayPreviewStyles from './daypreview.module.scss';
-// import style from 'styled-components'
-
 
 
 const DayPreview = ({ previewDate }) => {
@@ -36,48 +33,11 @@ const DayPreview = ({ previewDate }) => {
     /***********************/
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    /***********************/
-
-
-    
-    const text = ["Oh, My God!", "Oh, My God!", "Oh, My God!", "Oh, My God!", "Oh, My God!", "Oh, My God!", "Oh, My God!", "Oh, My God!"];
-
     return (
         <div className={dayPreviewStyles.container}>
 
             {/* <h1 ref={elem => dateRef = elem}>{moment(previewDate).format("MMM DD")}</h1> */}
-            <Locky enabled={true}>
-                <div
-                    style={{
-                        backgroundColor: "skyblue",
-                        overflow: "scroll",
-                        height: 100,
-                        width: 300
-                    }}
-                >
-                    {text.map((item, idx) => (
-                        <h1>{item}</h1>
-                    ))}
-                </div>
+            
                 {/* <ul ref={elem => listRef = elem}
                     className={dayPreviewStyles.previewList} >
                     {db.map((item, idx) => (
@@ -90,9 +50,8 @@ const DayPreview = ({ previewDate }) => {
                         </li>
                     ))}
                 </ul> */}
-            </Locky>
+                </div>
 
-        </div>
     )
 }
 
