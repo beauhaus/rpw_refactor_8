@@ -1,9 +1,11 @@
 import React, { useState } from 'react'
 import moment from 'moment'
 import CalNav from './calendarnav'
-import DayPrevPanel from './daypreview'
+// import DayPrevPanel from './daypreview'
 import MonthGrid from './monthgrid'
 import {monthArrayMaker} from '../../utils/utils' 
+
+import Prev from "./prev"
 
 import monthCalendarStyles from './monthcalendar.module.scss';
 
@@ -39,9 +41,10 @@ const MonthCalendar = () => {
                 incMonth={incrementMonth}
                 selectedDate={selectedDate}
             />
-            <DayPrevPanel
+            {/* <DayPrevPanel
                 previewDate={previewDate}
-            />
+            /> */}
+            <Prev/>
             <MonthGrid
                 daysArr={daysArr}
                 selectedDate={selectedDate}
