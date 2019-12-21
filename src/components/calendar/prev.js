@@ -1,11 +1,8 @@
 import React, { useState } from "react";
 import Locky from "react-locky";
 
+import prevStyles from './prev.module.scss';
 
-const styles = {
-  fontFamily: "sans-serif",
-  textAlign: "center"
-};
 
 const text = Array(10)
   .fill(1)
@@ -58,50 +55,15 @@ const Prev = () => {
   
 
   return (
-    <div style={styles}>
-      With Locky. Everything "works":
+    <div className={prevStyles.container}>
+-testing-
       <Locky
-        // events={getEvents()}
-        // noDefault={noDefault}
-        // enabled={enabled}
-        // onEscape={onEscape}
+        className={prevStyles.locky}
       >
-        {/* <br />
-        <div style={{ textAlign: "left" }}>
-          <button onClick={this.toggleDP}>
-            {!this.state.noDefault ? "enable" : "disable"}
-          </button>
-          no-default-props (will disable all default hooks()
-          <br />
-          <button onClick={this.toggleSC}>
-            {!this.state.scroll ? "enable" : "disable"}
-          </button>
-          no-scroll
-          <br />
-          <button onClick={this.toggleKD}>
-            {!this.state.keydown ? "enable" : "disable"}
-          </button>
-          no-keyDown
-          <br />
-          <br />
-          <button onClick={this.toggleCE}>
-            {!this.state.clickToEscape ? "enable" : "disable"}
-          </button>
-          "clickToEscape", will disable Locky on click outside
-        </div>
-        <h2>OK. NOW ENABLE LOCKY!</h2>
-        (beware! he will steal events!)
-        <br />
-        Locky
-        <button onClick={this.toggle} style={{ fontSize: 18 }}>
-          {!enabled ? "enable" : "disable"}
-        </button>
-        (also toggle to apply changes)
-        <br /> */}
+        
         <Test />
       </Locky>
-      <br />
-      <br />
+      
     </div>
   );
 };
