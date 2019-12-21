@@ -42,13 +42,13 @@ const DayPreview = ({ previewDate }) => {
         <div className={dayPreviewStyles.container}>
 
             {/* <h1 ref={elem => dateRef = elem}>{moment(previewDate).format("MMM DD")}</h1> */}
-            <Locky enabled={false}>
+            <Locky enabled={true}>
                 <div
                     style={{
                         backgroundColor: "skyblue",
                         overflow: "scroll",
                         height: 100,
-                        width: 200
+                        width: 300
                     }}
                 >
                     {text.map((item, idx) => (
