@@ -5,7 +5,7 @@ import CalNav from './calendarnav'
 import MonthGrid from './monthgrid'
 import {monthArrayMaker} from '../../utils/utils' 
 
-import Prev from "./prev"
+import PrevPanel from "./prevpanel"
 
 import monthCalendarStyles from './monthcalendar.module.scss';
 
@@ -41,10 +41,13 @@ const MonthCalendar = () => {
                 incMonth={incrementMonth}
                 selectedDate={selectedDate}
             />
+            
             {/* <DayPrevPanel
                 previewDate={previewDate}
             /> */}
-            <Prev/>
+
+            <PrevPanel previewDate={previewDate}/>
+            
             <MonthGrid
                 daysArr={daysArr}
                 selectedDate={selectedDate}
