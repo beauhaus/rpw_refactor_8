@@ -2,7 +2,7 @@ import React from 'react';
 import NavLink from './navlink';
 // import rpwLogo from '../images/rpw-main-icon-300.jpg';
 import landingStyles from './landing.module.scss';
-import Calendar from './calendar/monthcalendar'
+import Calendar from './calendar/calendar'
 const Landing = () => (
     <main className={landingStyles.landingContainer}>
         <section className={landingStyles.landingContentContainer}>

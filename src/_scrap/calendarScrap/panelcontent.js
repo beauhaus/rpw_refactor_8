@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react'
+import React, { useEffect, useRef } from 'react'
 import { gsap } from "gsap";
 
 // import allEventsData from '../../hooks/use-alleventspreview';
@@ -16,7 +16,7 @@ import panelContentStyles from './panelcontentstyles.module.scss';
 
 
 const PrevPanel = ({ eventsDB }) => {
-    // const [DBCallParameter, setDBCallParameter] = useState('default')
+    // const [inputDB, setInputDB] = useState('default')
 
     // useEffect(() => {
     //     setDBCallParameter(previewDate)
@@ -25,17 +25,19 @@ const PrevPanel = ({ eventsDB }) => {
     // const db = allEventsData(DBCallParameter)
     // console.log("DB: ", db)
 
-    let listRef = useRef(null)
+    // let listRef = useRef(null)
 
-    useEffect(() => {
-        gsap.set(listRef, { opacity: 0, y: -30 })
+    // useEffect(() => {
+    //     gsap.set(listRef, { opacity: 0, y: -30 })
+        //     gsap.set(listRef, { opacity: 0, y: 30 })
 
-        const tl = gsap.timeline({ defaults: { opacity: 1 } })
 
-        tl.to(listRef, { duration: .8, y: 0, ease: "back(1.4)" }, '-=0.5')
+    //     const tl = gsap.timeline({ defaults: { opacity: 0 } })
 
-        console.log("useEff!")
-    }, [eventsDB])
+    //     tl.to(listRef, { duration: .8, opacity: 1, ease: "back(1.4)" }, '-=0.5')
+
+    //     console.log("useEff!")
+    // }, [eventsDB])
 
 
 

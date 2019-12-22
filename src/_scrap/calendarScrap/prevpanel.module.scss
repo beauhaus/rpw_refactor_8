@@ -39,6 +39,26 @@
         transform: translateY(-200px);
         margin-bottom: 1vh;
     }
+    .preview-list {
+        padding: 2%;
+        // border: 2px solid blue;
+        // background: rgba(222, 184, 135, 0);
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        // opacity: 1;
+        transform: translateY(30px);
+        font-size: 1rem;
+        color: primary-midnightblue;
+        padding-left: 0;
+        padding: 0 0.5rem 0 0;
+        border: 2px dotted lime;
+    
+        overflow: scroll; /* vital for react-locky to work*/
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+        
+    }    
     
 }
 

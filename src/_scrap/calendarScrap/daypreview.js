@@ -3,7 +3,7 @@ import React, { useState, useEffect, useRef } from 'react'
 import moment from 'moment';
 import { Link } from 'gatsby'
 
-import allEventsData from '../../hooks/use-alleventspreview';
+import allEventsData from '../../../hooks/use-alleventspreview';
 
 import dayPreviewStyles from './daypreview.module.scss';
 

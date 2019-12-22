@@ -4,7 +4,7 @@ import moment from 'moment'
 import PrevMonthBuffer from './prevmonthbuffer'
 import Days from './days'
 
-import eventsDaysdisplay from '../../hooks/use-alleventsdaysdisplay'
+import eventsDaysdisplay from '../../../hooks/use-alleventsdaysdisplay'
 
 import monthGridStyles from './monthgrid.module.scss';
 

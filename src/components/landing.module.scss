@@ -45,7 +45,9 @@ main.landing-container {
         margin: 8vh auto;
         text-align: center;
         padding: 2vh auto;
-        
+
+    //     overflow: scroll;
+    //   position: relative; /* only on Desktop?*/
         img {
             width: 50%;
             margin: 2vh auto;
