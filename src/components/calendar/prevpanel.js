@@ -7,6 +7,9 @@ import allEventsData from '../../hooks/use-alleventspreview';
 
 import PanelContent from './panelcontent'
 import prevStyles from './prev.module.scss';
+    // const [DBCallParameter, setDBCallParameter] = useState('default')
+
+   
 
 
 
@@ -23,9 +26,7 @@ const PrevPanel = ({ previewDate }) => {
 
     useEffect(() => {
         gsap.set(dateRef, { opacity: 0, y: -100 })
-
         const tl = gsap.timeline({ defaults: { opacity: 1 } })
-
         tl.to(dateRef, { duration: .6, y: 0, ease: 'elastic(1,0.8)', delay: 0.2 })
     }, [previewDate])
 

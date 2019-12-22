@@ -1,6 +1,7 @@
 import { graphql, useStaticQuery } from 'gatsby'
 
 const useEvents = (searchParam) => {
+  // console.log("preview!", searchParam)
   const data = useStaticQuery(graphql`
     query {
       db: allMdx {

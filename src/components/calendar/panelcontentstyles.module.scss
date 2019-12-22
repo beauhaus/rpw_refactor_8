@@ -10,7 +10,7 @@
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
     opacity: 0;
-    opacity: 1;
+    // opacity: 1;
     transform: translateY(30px);
     font-size: 1rem;
     color: primary-midnightblue;
@@ -23,7 +23,7 @@
     &>li {
         padding-left: 1vw;
         margin-top: 3vh;
-        color: red;
+        color: #fff;
 
         p {
             font-size: 0.8rem;
