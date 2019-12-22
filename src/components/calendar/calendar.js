@@ -6,6 +6,8 @@ import moment from 'moment'
 import PrevPanel from "./prevpanel"
 import { monthArrayMaker } from '../../utils/utils'
 import Locky from "react-locky";
+        // <Locky enabled={false} className={calendarStyles.locky} >
+
 
 
 import calendarStyles from './calendar.module.scss';
@@ -37,7 +39,7 @@ const MonthCalendar = () => {
     // const aside = '<aside>aside</aside>'
     return (
 
-        <Locky enabled={false} className={calendarStyles.locky} >
+        // <Locky enabled={false} className={calendarStyles.locky} >
             <div className={calendarStyles.container}>
                 {/* <CalNav
                 decMonth={decrementMonth}
@@ -58,7 +60,7 @@ const MonthCalendar = () => {
             /> */}
 
             </div>
-        </Locky>
+        // </Locky>
     )
 
 }

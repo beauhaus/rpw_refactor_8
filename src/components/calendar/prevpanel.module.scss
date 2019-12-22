@@ -27,7 +27,7 @@
 
     // overflow: hidden;
     // overflow: scroll; /* vital for react-locky to work*/
-    // overflow-y: auto;
+    // overflow-y: scroll;
     // -webkit-overflow-scrolling: touch;
     
     h1 {
@@ -64,7 +64,7 @@
         padding-left: 0;
         padding: 0 0.5rem 0 0;
         // border: 2px dotted lime;
-    
+        position: relative;
         overflow: scroll; /* vital for react-locky to work*/
         overflow-y: auto;
         -webkit-overflow-scrolling: touch;
