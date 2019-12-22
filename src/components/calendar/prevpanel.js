@@ -2,40 +2,39 @@ import React, { useState, useEffect, useRef } from 'react'
 import Locky from "react-locky";
 import moment from 'moment';
 import { gsap } from "gsap";
+import allEventsData from '../../hooks/use-alleventspreview';
 
-
+import PanelContent from './panelcontent'
 import prevStyles from './prev.module.scss';
 
 
-const PrevPanel = ({previewDate}) => {
+   
+    /***********************/
 
-    // useEffect(() => {
-    //     setDBCallParameter(previewDate)
-    // }, [previewDate])
+const PrevPanel = ({previewDate}) => {
+    const [DBCallParameter, setDBCallParameter] = useState('default')
+
+    useEffect(() => {
+        setDBCallParameter(previewDate)
+    }, [previewDate])
+
     let dateRef = useRef(null)
 
     useEffect(() => {
         gsap.set(dateRef, { opacity: 0, y: -100 })
-    //     gsap.set(listRef, { opacity: 0, y: 30 })
 
         const tl = gsap.timeline({ defaults: { opacity: 1 } })
 
         tl.to(dateRef, { duration: .6, y: 0, ease: 'elastic(1,0.8)', delay: 0.2 })
-    //         .to(listRef, { duration: .8, y: 0, ease: "back(1.4)" }, '-=0.5')
     }, [previewDate])
 
-
-    const text = Array(30)
-        .fill(1)
-        .map((x, index) => <div key={index}>{index}</div>);
+    const eventsDB = allEventsData(DBCallParameter)
 
     return (
         <div className={prevStyles.container}>
             <h1 ref={elem => dateRef = elem}>{moment(previewDate).format("MMM DD")}</h1>
             <Locky className={prevStyles.locky}>
-                <div className={prevStyles.content}>
-                    {text}
-                </div>
+                <PanelContent eventsDB={eventsDB}/>
             </Locky>
         </div>
     )

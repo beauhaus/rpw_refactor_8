@@ -5,8 +5,8 @@ import instaStyles from './insta.module.scss';
 // import useInstagram from '../hooks/use-instagram'
 
 const Insta = () => {
-    const instaPhotos= useInstagram();
-    const {username} = instaPhotos[0]
+    // const instaPhotos= useInstagram();
+    // const {username} = instaPhotos[0]
 
     return (
         <main className={instaStyles.instaContainer}>
