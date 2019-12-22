@@ -1,0 +1,72 @@
+
+            .gameClass {
+                color: #fff;
+                border: 1px solid $secondary-weborange;
+                border-width: 0;
+                border-left-width: 2px;
+            }
+
+            .show {
+                color: #000;
+                border: 1px solid $secondary-internatorange;
+                border-width: 0;
+                border-left-width: 2px;
+            }
+
+            .meeting {
+                color: #000;
+                border: 1px solid $secondary-weborange;
+                border-width: 0;
+                border-left-width: 2px;
+            }
+
+            .party-class {
+                color: #000;
+                border: 1px solid $secondary-daisybushpurple;
+                border-width: 0;
+                border-left-width: 2px;
+            }
+
+            .chess-beginner {
+                color: #fff;
+                border: 1px solid lighten($secondary-abbeygrey, 30%);
+                border-width: 0;
+                border-left-width: 2px;
+            }
+
+            .chess-intermediate {
+                color: #fff;
+                border: 1px solid lighten($secondary-abbeygrey, 15%);
+                border-width: 0;
+                border-left-width: 2px;
+            }
+
+            .chess-advanced {
+                color: #fff;
+                border: 1px solid lighten($secondary-abbeygrey, 0%);
+                border-width: 0;
+                border-left-width: 2px;
+
+            }
+
+            .robotics-beginner {
+                color: #000;
+                border: 1px solid #6ed1a8;
+                border-width: 0;
+                border-left-width: 2px;
+            }
+
+
+            .oilpainting-beginner {
+                color: #ffffff;
+                border: 1px solid $secondary-daisybushpurple;
+                border-width: 0;
+                border-left-width: 2px;
+            }
+
+            .party-private {
+                color: #eee;
+                border: 1px solid royalblue;
+                border-width: 0;
+                border-left-width: 1px;
+            }
