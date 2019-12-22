@@ -26,9 +26,9 @@
     flex-direction: column;
 
     // overflow: hidden;
-    // overflow: scroll; /* vital for react-locky to work*/
+    overflow: scroll; /* vital for react-locky to work*/
     // overflow-y: scroll;
-    // -webkit-overflow-scrolling: touch;
+    -webkit-overflow-scrolling: touch;
     
     h1 {
         /*dateRef*/
