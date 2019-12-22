@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react'
-import Locky from "react-locky";
+// import Locky from "react-locky";
+
 import moment from 'moment';
 import { gsap } from "gsap";
 import allEventsData from '../../hooks/use-alleventspreview';
@@ -8,10 +9,10 @@ import PanelContent from './panelcontent'
 import prevStyles from './prev.module.scss';
 
 
-   
-    /***********************/
 
-const PrevPanel = ({previewDate}) => {
+/***********************/
+
+const PrevPanel = ({ previewDate }) => {
     const [DBCallParameter, setDBCallParameter] = useState('default')
 
     useEffect(() => {
@@ -33,9 +34,7 @@ const PrevPanel = ({previewDate}) => {
     return (
         <div className={prevStyles.container}>
             <h1 ref={elem => dateRef = elem}>{moment(previewDate).format("MMM DD")}</h1>
-            <Locky className={prevStyles.locky}>
-                <PanelContent eventsDB={eventsDB}/>
-            </Locky>
+            <PanelContent eventsDB={eventsDB} />
         </div>
     )
 };

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Locky from "react-locky";
+// import Locky from "react-locky";
 
 import prevStyles from './prev.module.scss';
 

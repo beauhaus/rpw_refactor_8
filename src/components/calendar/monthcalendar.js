@@ -4,6 +4,7 @@ import CalNav from './calendarnav'
 // import DayPrevPanel from './daypreview'
 import MonthGrid from './monthgrid'
 import {monthArrayMaker} from '../../utils/utils' 
+import Locky from "react-locky";
 
 import PrevPanel from "./prevpanel"
 
@@ -24,7 +25,7 @@ const MonthCalendar = () => {
         return setSelectedDate(subtractMonth)
     }
     const selectDay = (dateString) => {
-        // console.log("selectDay Input:", dateString)
+        console.log("selectDay Input:", dateString)
         return setPreviewDate(dateString)
     }
 
@@ -35,7 +36,9 @@ const MonthCalendar = () => {
     const daysArr = monthArrayMaker(selectedDate)
 
     return (
+        
         <div className={monthCalendarStyles.container}>
+        <Locky className={monthCalendarStyles.locky}>
             <CalNav
                 decMonth={decrementMonth}
                 incMonth={incrementMonth}
@@ -53,6 +56,8 @@ const MonthCalendar = () => {
                 selectedDate={selectedDate}
                 dayClick={selectDay}
             />
+            </Locky>
+
         </div>
     )
 
