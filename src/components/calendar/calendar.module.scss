@@ -10,11 +10,11 @@
         width: 100vw;
         height: 100vh; /*account for header */
         position: absolute;
-        top:8vh;
+        top:8.5vh;
         // margin: 2vh auto; /* keep?*/
         display: grid;
         padding: 4px;
-        border: 3px solid red;
+        border: 1px solid yellow;
         // grid-template-columns: 1fr 2fr;
         grid-template-columns: 1fr;
         grid-template-rows: 9vh 35vh 42vh;

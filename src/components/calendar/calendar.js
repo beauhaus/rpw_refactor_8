@@ -3,10 +3,10 @@ import moment from 'moment'
 // import CalNav from './calendarScrap/calendarnav'
 // import DayPrevPanel from './daypreview'
 // import MonthGrid from './calendarScrap/monthgrid'
+import PrevPanel from "./prevpanel"
 import { monthArrayMaker } from '../../utils/utils'
 import Locky from "react-locky";
 
-// import PrevPanel from "./calendarScrap/prevpanel"
 
 import calendarStyles from './calendar.module.scss';
 
@@ -49,9 +49,9 @@ const MonthCalendar = () => {
                 previewDate={previewDate}
             /> */}
 
-                {/* <PrevPanel previewDate={previewDate}/>
+                <PrevPanel previewDate={previewDate}/>
             
-            <MonthGrid
+            {/* <MonthGrid
                 daysArr={daysArr}
                 selectedDate={selectedDate}
                 dayClick={selectDay}
