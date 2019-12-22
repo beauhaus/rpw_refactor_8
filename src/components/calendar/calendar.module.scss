@@ -8,16 +8,16 @@
     //   position: relative;
     // .locky {
         width: 100vw;
-        height: 95vh; /*account for header */
+        height: 94vh; /*account for header */
         position: absolute;
-        top:8.5vh;
+        top:9.5vh;
         // margin: 2vh auto; /* keep?*/
         display: grid;
         padding: 4px;
-        border: 1px solid yellow;
+        // border: 1px solid yellow;
         // grid-template-columns: 1fr 2fr;
         grid-template-columns: 1fr;
-        grid-template-rows: 9vh 35vh 42vh;
+        grid-template-rows: 7vh 40vh 47vh; // divided by 94
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
         background: $primary-mistgrey;
         border-radius: 6px;
