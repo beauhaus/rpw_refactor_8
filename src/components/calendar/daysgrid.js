@@ -1,7 +1,7 @@
 import React from 'react'
 // import moment from 'moment'
 
-// import PrevMonthBuffer from './prevmonthbuffer'
+import PrevMonthBuffer from './prevmonthbuffer'
 // import Days from './days'
 
 // import eventsDaysdisplay from '../../../hooks/use-alleventsdaysdisplay'
@@ -22,6 +22,7 @@ const DaysGrid = () => {
                 <p>f</p>
                 <p>s</p>
             </div>
+            <PrevMonthBuffer/>
             {/* <PrevMonthBuffer firstDay={firstDay} selectedDate={selectedDate} /> */}
             <button onClick={() => alert("You clicked!")}>9</button>
             <button onClick={() => alert("You clicked!")}>9</button>
