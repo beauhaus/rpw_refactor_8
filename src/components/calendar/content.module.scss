@@ -1,6 +1,14 @@
-.list {
+.locky-subdiv {
     overflow: scroll;
     position: relative;
-    height: 24vh;
-    border: 1px solid yellow;
+    .list {
+        overflow: scroll;
+        // position: absolute;
+        // top: 0;
+        // left: 0;
+        height: 47vh;
+        // width: 100%;
+        background-color: pink;
+        border: 1px solid yellow;
+    }
 }

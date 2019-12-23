@@ -5,12 +5,11 @@ import wrapStyles from './wrapper.module.scss';
 import Content from './content'
 
 const Wrapper = ({ previewDate }) => {
-   
+
     return (
         <div className={wrapStyles.container}>
-            <Locky enabled={true} >
-
-             <Content/>
+            <Locky enabled={false} >
+                <Content />
             </Locky>
         </div>
     )

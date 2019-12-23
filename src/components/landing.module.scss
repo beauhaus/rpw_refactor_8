@@ -42,12 +42,14 @@ main.landing-container {
 
         section.landing-content-container { /* wraps logo, txtbox & button */
         width: 100%;
-        margin: 8vh auto;
+        margin: 0 auto;
         text-align: center;
         padding: 2vh auto;
 
     //     overflow: scroll;
-    //   position: relative; /* only on Desktop?*/
+      position: absolute; /* only on Desktop?*/
+      top: 0; /* ✅?*/
+    
         img {
             width: 50%;
             margin: 2vh auto;

@@ -7,64 +7,65 @@ const Content = ({ previewDate }) => {
 
     return (
         <Locky enabled={false} >
-
-            <ul className={contentStyles.list}>
-                <li>
-                    <p>P Item 1</p>
-                    <p>List Item 2</p>
-                    <p>List Item 3</p>
-                </li>
-                <li>
-                    <p>P Item 1</p>
-                    <p>List Item 2</p>
-                    <p>List Item 3</p>
-                </li>
-                <li>
-                    <p>P Item 1</p>
-                    <p>List Item 2</p>
-                    <p>List Item 3</p>
-                </li>
-                <li>
-                    <p>P Item 1</p>
-                    <p>List Item 2</p>
-                    <p>List Item 3</p>
-                </li>
-                <li>
-                    <p>P Item 1</p>
-                    <p>List Item 2</p>
-                    <p>List Item 3</p>
-                </li>
-                <li>
-                    <p>P Item 1</p>
-                    <p>List Item 2</p>
-                    <p>List Item 3</p>
-                </li>
-                <li>
-                    <p>P Item 1</p>
-                    <p>List Item 2</p>
-                    <p>List Item 3</p>
-                </li>
-                <li>
-                    <p>P Item 1</p>
-                    <p>List Item 2</p>
-                    <p>List Item 3</p>
-                </li>
-                <li>
-                    <p>P Item 1</p>
-                    <p>List Item 2</p>
-                    <p>List Item 3</p>
-                </li>
-                <li>
-                    <p>P Item 1</p>
-                    <p>List Item 2</p>
-                    <p>List Item 3</p>
-                </li>
-                <li>
-                    <p>P Item 1</p>
-                    <p>P Item 2</p>
-                    <p>P Item 3</p>
-                </li>
-            </ul>
+            <div className={contentStyles.lockySubdiv}>
+                <ul className={contentStyles.list}>
+                    <li>
+                        <p>P Item 1</p>
+                        <p>List Item 2</p>
+                        <p>List Item 3</p>
+                    </li>
+                    <li>
+                        <p>P Item 1</p>
+                        <p>List Item 2</p>
+                        <p>List Item 3</p>
+                    </li>
+                    <li>
+                        <p>P Item 1</p>
+                        <p>List Item 2</p>
+                        <p>List Item 3</p>
+                    </li>
+                    <li>
+                        <p>P Item 1</p>
+                        <p>List Item 2</p>
+                        <p>List Item 3</p>
+                    </li>
+                    <li>
+                        <p>P Item 1</p>
+                        <p>List Item 2</p>
+                        <p>List Item 3</p>
+                    </li>
+                    <li>
+                        <p>P Item 1</p>
+                        <p>List Item 2</p>
+                        <p>List Item 3</p>
+                    </li>
+                    <li>
+                        <p>P Item 1</p>
+                        <p>List Item 2</p>
+                        <p>List Item 3</p>
+                    </li>
+                    <li>
+                        <p>P Item 1</p>
+                        <p>List Item 2</p>
+                        <p>List Item 3</p>
+                    </li>
+                    <li>
+                        <p>P Item 1</p>
+                        <p>List Item 2</p>
+                        <p>List Item 3</p>
+                    </li>
+                    <li>
+                        <p>P Item 1</p>
+                        <p>List Item 2</p>
+                        <p>List Item 3</p>
+                    </li>
+                    <li>
+                        <p>P Item 1</p>
+                        <p>P Item 2</p>
+                        <p>P Item 3</p>
+                    </li>
+                </ul>
+            </div>
         </Locky>
     )
 };
