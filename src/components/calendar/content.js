@@ -6,7 +6,6 @@ import contentStyles from './content.module.scss';
 const Content = ({ previewDate }) => {
 
     return (
-        // <Locky enabled={false} >
             <div className={contentStyles.lockySubdiv}>
                 <ul className={contentStyles.list}>
                     <li>
@@ -66,7 +65,6 @@ const Content = ({ previewDate }) => {
                     </li>
                 </ul>
             </div>
-        // </Locky>
     )
 };
 

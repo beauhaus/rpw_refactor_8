@@ -9,6 +9,7 @@ import Wrapper from './wrapper'
 
 
 import calendarStyles from './calendar.module.scss';
+import DaysGrid from './daysgrid';
 
 const MonthCalendar = () => {
     const [selectedDate, setSelectedDate] = useState(moment().format('YYYY-MM-DD'))
@@ -51,6 +52,7 @@ const MonthCalendar = () => {
 
                 {/* <PrevPanel previewDate={previewDate}/> */}
                 <Wrapper/>
+                <DaysGrid/>
             
             {/* <MonthGrid
                 daysArr={daysArr}
