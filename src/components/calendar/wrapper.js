@@ -8,7 +8,7 @@ const Wrapper = ({ previewDate }) => {
    
     return (
         <div className={wrapStyles.container}>
-            <Locky enabled={false} >
+            <Locky enabled={true} >
 
              <Content/>
             </Locky>

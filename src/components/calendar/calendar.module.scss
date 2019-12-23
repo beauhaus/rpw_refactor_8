@@ -10,7 +10,7 @@
         width: 100vw;
         height: 94vh; /*account for header */
         // position: absolute;
-        // top:9.5vh;
+        top:8.5vh;
         // margin: 2vh auto; /* keep?*/
         display: grid;
         padding: 4px;
@@ -22,8 +22,8 @@
         background: $primary-mistgrey;
         border-radius: 6px;
     
-        // position: absolute;
-        // z-index: 100;
+        position: absolute;
+        z-index: 100;
         // top: 0vh;
     // }
 }
