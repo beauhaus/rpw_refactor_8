@@ -10,7 +10,7 @@ import daysGridStyles from './daysgrid.module.scss';
 
 
 const DaysGrid = () => {
-   
+
     return (
         <div className={daysGridStyles.container}>
             <div className={daysGridStyles.smtwtfs}>
@@ -22,30 +22,104 @@ const DaysGrid = () => {
                 <p>f</p>
                 <p>s</p>
             </div>
-            <PrevMonthBuffer/>
+            <PrevMonthBuffer />
             {/* <PrevMonthBuffer firstDay={firstDay} selectedDate={selectedDate} /> */}
-            <button onClick={() => alert("You clicked!")}>9</button>
-            <button onClick={() => alert("You clicked!")}>9</button>
-            <button onClick={() => alert("You clicked!")}>9</button>
-            <button onClick={() => alert("You clicked!")}>9</button>
-            <button onClick={() => alert("You clicked!")}>9</button>
-            <button onClick={() => alert("You clicked!")}>9</button>
-            <button onClick={() => alert("You clicked!")}>9</button>
-            <button onClick={() => alert("You clicked!")}>9</button>
-            <button onClick={() => alert("You clicked!")}>9</button>
-            <button onClick={() => alert("You clicked!")}>9</button>
-            <button onClick={() => alert("You clicked!")}>9</button>
-            <button onClick={() => alert("You clicked!")}>9</button>
-            <button onClick={() => alert("You clicked!")}>9</button>
-            <button onClick={() => alert("You clicked!")}>9</button>
-            <button onClick={() => alert("You clicked!")}>9</button>
-            <button onClick={() => alert("You clicked!")}>9</button>
-            <button onClick={() => alert("You clicked!")}>9</button>
-            <button onClick={() => alert("You clicked!")}>9</button>
-            <button onClick={() => alert("You clicked!")}>9</button>
-            <button onClick={() => alert("You clicked!")}>9</button>
-            <button onClick={() => alert("You clicked!")}>9</button>
-            <button onClick={() => alert("You clicked!")}>9</button>
+            <div className={daysGridStyles.daycontainer}>
+                <button onClick={() => alert("You clicked!")}>
+                    <div>fd</div>
+                    <p>*</p>
+                </button>
+            </div>
+            <div className={daysGridStyles.daycontainer}>
+                <button onClick={() => alert("You clicked!")}>
+                    <div>fd</div>
+                    <p>*</p>
+                </button>
+            </div>
+            <div className={daysGridStyles.daycontainer}>
+                <button onClick={() => alert("You clicked!")}>
+                    <div>fd</div>
+                    <p>*</p>
+                </button>
+            </div>
+            <div className={daysGridStyles.daycontainer}>
+                <button onClick={() => alert("You clicked!")}>
+                    <div>fd</div>
+                    <p>*</p>
+                </button>
+            </div>
+            <div className={daysGridStyles.daycontainer}>
+                <button onClick={() => alert("You clicked!")}>
+                    <div>fd</div>
+                    <p>*</p>
+                </button>
+            </div>
+            <div className={daysGridStyles.daycontainer}>
+                <button onClick={() => alert("You clicked!")}>
+                    <div>fd</div>
+                    <p>*</p>
+                </button>
+            </div>
+            <div className={daysGridStyles.daycontainer}>
+                <button onClick={() => alert("You clicked!")}>
+                    <div>fd</div>
+                    <p>*</p>
+                </button>
+            </div>
+            <div className={daysGridStyles.daycontainer}>
+                <button onClick={() => alert("You clicked!")}>
+                    <div>fd</div>
+                    <p>*</p>
+                </button>
+            </div>
+            <div className={daysGridStyles.daycontainer}>
+                <button onClick={() => alert("You clicked!")}>
+                    <div>fd</div>
+                    <p>*</p>
+                </button>
+            </div>
+            <div className={daysGridStyles.daycontainer}>
+                <button onClick={() => alert("You clicked!")}>
+                    <div>fd</div>
+                    <p>*</p>
+                </button>
+            </div>
+            <div className={daysGridStyles.daycontainer}>
+                <button onClick={() => alert("You clicked!")}>
+                    <div>fd</div>
+                    <p>*</p>
+                </button>
+            </div>
+            <div className={daysGridStyles.daycontainer}>
+                <button onClick={() => alert("You clicked!")}>
+                    <div>fd</div>
+                    <p>*</p>
+                </button>
+            </div>
+            <div className={daysGridStyles.daycontainer}>
+                <button onClick={() => alert("You clicked!")}>
+                    <div>fd</div>
+                    <p>*</p>
+                </button>
+            </div>
+            <div className={daysGridStyles.daycontainer}>
+                <button onClick={() => alert("You clicked!")}>
+                    <div>fd</div>
+                    <p>*</p>
+                </button>
+            </div>
+            <div className={daysGridStyles.daycontainer}>
+                <button onClick={() => alert("You clicked!")}>
+                    <div>fd</div>
+                    <p>*</p>
+                </button>
+            </div>
+            <div className={daysGridStyles.daycontainer}>
+                <button onClick={() => alert("You clicked!")}>
+                    <div>fd</div>
+                    <p>*</p>
+                </button>
+            </div>
         </div>
     )
 

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import moment from 'moment'
-// import CalNav from './calendarScrap/calendarnav'
+import CalNav from './calnav'
 // import DayPrevPanel from './daypreview'
 // import MonthGrid from './calendarScrap/monthgrid'
 // import PrevPanel from "./prevpanel"
@@ -45,6 +45,7 @@ const MonthCalendar = () => {
                 incMonth={incrementMonth}
                 selectedDate={selectedDate}
             /> */}
+            <CalNav/>
 
                 {/* <DayPrevPanel
                 previewDate={previewDate}
