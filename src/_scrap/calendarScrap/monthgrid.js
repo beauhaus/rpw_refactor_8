@@ -28,6 +28,7 @@ const MonthGrid = ({ selectedDate, daysArr, dayClick }) => {
             <p>s</p>
             </div>
             <PrevMonthBuffer firstDay={firstDay} selectedDate={selectedDate} />
+           
             {daysArr.map((item, idx) => {
                 // console.log("IT: ", item.own.fullDate)
                 let filteredDB = dayData.filter(evtItem => {

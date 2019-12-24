@@ -1,11 +1,8 @@
 import React, { useState } from 'react'
 import moment from 'moment'
 import CalNav from './calnav'
-// import DayPrevPanel from './daypreview'
-// import MonthGrid from './calendarScrap/monthgrid'
-// import PrevPanel from "./prevpanel"
 import { monthArrayMaker } from '../../utils/utils'
-import Wrapper from './wrapper'
+import Panel from './panel'
 
 
 import calendarStyles from './calendar.module.scss';
@@ -13,6 +10,7 @@ import DaysGrid from './daysgrid';
 
 const MonthCalendar = () => {
     const [selectedDate, setSelectedDate] = useState(moment().format('YYYY-MM-DD'))
+
     // const [selectedPreviewDisplayDay, setSelectedPreviewDisplayDay] = useState(moment().format('YYYY-MM-DD'))
     const [previewDate, setPreviewDate] = useState(moment().format('YYYY-MM-DD'))
 
@@ -32,41 +30,23 @@ const MonthCalendar = () => {
 
     /********************************************************/
 
-
-
     const daysArr = monthArrayMaker(selectedDate)
-    // const aside = '<aside>aside</aside>'
+    
     return (
 
-        // <Locky enabled={false} className={calendarStyles.locky} >
-            <div className={calendarStyles.container}>
-                {/* <CalNav
+        <div className={calendarStyles.container}>
+            <CalNav
                 decMonth={decrementMonth}
                 incMonth={incrementMonth}
                 selectedDate={selectedDate}
-            /> */}
-            <CalNav/>
-
-                {/* <DayPrevPanel
-                previewDate={previewDate}
-            /> */}
-
-                {/* <PrevPanel previewDate={previewDate}/> */}
-                <Wrapper/>
-                <DaysGrid/>
-            
-            {/* <MonthGrid
+            />
+            <Panel previewDate={previewDate} />
+            <DaysGrid
                 daysArr={daysArr}
                 selectedDate={selectedDate}
-                dayClick={selectDay}
-            /> */}
-
-            </div>
-        // </Locky>
+                dayClick={selectDay} />
+        </div>
     )
-
 }
-
-// const MonthCalendar =()=>(<Locky component={LockyComp}/>)
 
 export default MonthCalendar;

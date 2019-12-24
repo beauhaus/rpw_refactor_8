@@ -36,9 +36,9 @@ const DayPreview = ({ previewDate }) => {
     return (
         <div className={dayPreviewStyles.container}>
 
-            {/* <h1 ref={elem => dateRef = elem}>{moment(previewDate).format("MMM DD")}</h1> */}
+            <h1 ref={elem => dateRef = elem}>{moment(previewDate).format("MMM DD")}</h1>
             
-                {/* <ul ref={elem => listRef = elem}
+                <ul ref={elem => listRef = elem}
                     className={dayPreviewStyles.previewList} >
                     {db.map((item, idx) => (
                         <li key={idx} className={dayPreviewStyles[`${item.event.stylecode}`]}>
@@ -49,7 +49,7 @@ const DayPreview = ({ previewDate }) => {
                             <hr />
                         </li>
                     ))}
-                </ul> */}
+                </ul>
                 </div>
 
     )

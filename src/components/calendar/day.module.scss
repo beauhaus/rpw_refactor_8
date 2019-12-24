@@ -1,40 +1,65 @@
 @import "../../styles/variables.scss";
 
+
+
+
 .container {
     background: transparent;
     border-radius: 5px;
-    font-weight: 100;
-    color: $primary-midnightblue;
-    padding: 2px;
-    background: rgba(255, 255, 255, 0.1);
-    margin: 1px;
+  
     overflow: hidden;
-    display: grid;
-    // border: 1px solid blue;
+    padding: 0;
+    margin: 0;
 
-    &>div {
-        width: 100%;
+    &>button {
+        border-width: 0;
+        padding: 0;
+        margin: 0;
         height: 100%;
-        // border: 1px solid purple;
-
-        // &:focus {
-        //     outline: 1px solid rgba(231, 231, 231, 0.7);
-        // }
+        width: 100%;
+        // border: 1px solid coral;
+        outline: none;
         display: grid;
-        align-content: flex-end;
+        color: #fff;
 
-        p {
-            margin: 2px;
-            margin-top: -4vh;
-            // color: white;
-            border-radius: 2px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        // background: rgba(239, 133, 253, 0.5);
+        background: transparent;
+        font-size: 0.8rem;
+        text-align: center;
+
+        &>div {
+            color: #fff;
+
+            grid-row: 1;
+            grid-column: 2;
+            // outline: 1px solid black;
+            padding: 0;
+            margin: 0;
+            font-size: 0.8rem;
+        }
+
+        &>p {
+            // color: maroon;
+            // outline: 1px solid pink;
+            padding: 0;
+            margin: 0 auto;
+            margin-top: -8px;
             font-size: 0.01rem;
             display: block;
-            width: 8px;
-            height: 8px;
+            width: 5px;
+            height: 5px;
             border-radius: 50%;
             overflow: hidden;
-            box-shadow: 1px 1px 2px 0px rgb(36, 36, 36);
+            // box-shadow: 1px 1px 2px 0px rgb(36, 36, 36);
+
+            box-shadow: 1px 1px 2px 0px #000;
+
+            // position: absolute;
+            // top: 50%;
+            // left: 50%;
+            // transform: translateX(-50% -50%);
         }
     }
 
@@ -42,7 +67,7 @@
         width: 32px;
         display: block;
         height: 30px;
-        color: $primary-magenta;
+        color: #fff;
         margin: auto;
         font-weight: 400;
         // border-radius: 5px;
@@ -50,7 +75,8 @@
     }
 
     .current-date {
-        background: rgba(251, 218, 218, 0.541);
+        background: rgba(251, 218, 218, 0.1);
+        // background: red;
 
         &>p {
             font-weight: 500;

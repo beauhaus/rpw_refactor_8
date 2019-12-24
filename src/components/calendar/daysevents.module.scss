@@ -1,0 +1,27 @@
+.locky-subdiv {
+    overflow: scroll;
+    position: relative;
+    padding: 2%;
+    height: 43vh;
+    .list {
+        overflow: scroll;
+        -webkit-overflow-scrolling: touch;
+
+        height: 46vh;
+        padding-top: 2vh;
+        // background-color: pink;
+        opacity: 0;
+        transform: translateY(-200px);
+        text-align: left;
+
+        h1 {
+            font-weight: 100;
+            color: #575757;
+            margin-bottom: 0.5rem;
+        }
+        span {
+            font-style: oblique;
+            font-variant-caps: small-caps;
+        }
+    }
+}
