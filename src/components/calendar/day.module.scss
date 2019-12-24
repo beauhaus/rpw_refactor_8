@@ -68,7 +68,7 @@
         width: 32px;
         display: block;
         height: 30px;
-        color: #eee;
+        color: #cccccc;
         margin: auto;
         font-weight: 400;
         // border-radius: 5px;
@@ -76,7 +76,7 @@
     }
 
     .current-date {
-        background: rgba(251, 218, 218, 0.1);
+        // background: rgba(251, 218, 218, 0.1);
         // color: #fff;
 
         &>p {
@@ -87,6 +87,8 @@
             opacity: 1;
             font-weight: 600;
             color: #fff;
+            // filter: drop-shadow(2px 2px 4px 3px red);
+            text-shadow: #fff 1px 0 10px;
             // background: rgba(102, 102, 102, 0.1);
         }
     }
