@@ -44,8 +44,9 @@
             // color: maroon;
             // outline: 1px solid pink;
             padding: 0;
+            margin-bottom: 0;
             margin: 0 auto;
-            margin-top: -8px;
+            margin-top: -3px;
             font-size: 0.01rem;
             display: block;
             width: 5px;
@@ -67,7 +68,7 @@
         width: 32px;
         display: block;
         height: 30px;
-        color: #fff;
+        color: #eee;
         margin: auto;
         font-weight: 400;
         // border-radius: 5px;
@@ -76,16 +77,16 @@
 
     .current-date {
         background: rgba(251, 218, 218, 0.1);
-        // background: red;
+        // color: #fff;
 
         &>p {
             font-weight: 500;
-            opacity: 1;
-            // color: #fff;
         }
-
+        
         &>.day-number {
-            font-weight: 400;
+            opacity: 1;
+            font-weight: 600;
+            color: #fff;
             // background: rgba(102, 102, 102, 0.1);
         }
     }
