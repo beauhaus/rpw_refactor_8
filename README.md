@@ -10,18 +10,6 @@
 
 In this course, learn to build blazing fast apps and websites with React using Gatsby, a static PWA (Progressive Web App) generator. Over 50% of people will abandon a mobile site if it takes more than 3 seconds to load. Unless you’re willing to give up half of your potential customers, performance is no longer optional on the modern web. Fortunately, there are a lot of tools available to help you build screaming fast websites. Unfortunately, there’s a frighteningly large number of performance considerations, and many of them are easy to get wrong.
 
-## What You’ll Learn
-
-- Learn how to leverage free, open source tools including Gatsby, React, and
-  GraphQL to build high-performance websites.
-- Deliver an excellent experience to your users by providing only critical
-  assets on load and prefetching assets for subsequent page loads.
-- Implement performance best practices, such as the PRPL pattern, lazy
-  loading assets, and more.
-- Learn to build and deploy blazing fast websites in the fraction of time.
-- Create websites quickly with performance baked in.
-- Deploy your sites for free in minutes with Netlify.
-
 ## A Note About Running the Code
 
 We recommend getting the [code running on your computer](#getting-course-code-running-on-your-machine) to build your confidence working with Gatsby. If you get stuck, use the [Course Errata](#course-errata) below to debug, or refer to the the step branches to see what is different between your code and the reference code.
@@ -31,7 +19,7 @@ We recommend getting the [code running on your computer](#getting-course-code-ru
 You can jump into the CodeSandbox for each branch without having to get the code running on your computer. Keep in mind, that if you want to modify the code, you'll need to create a CodeSandbox free account to fork a new sandbox and save it to your CodeSandbox account.
 
 - [Course Starter](https://codesandbox.io/s/github/FrontendMasters/gatsby-intro/tree/master/)
-- [Step 0: Pages & Links](https://codesandbox.io/s/github/FrontendMasters/gatsby-intro/tree/step0/pages-and-links) 
+- [Step 0: Pages & Links](https://codesandbox.io/s/github/FrontendMasters/gatsby-intro/tree/step0/pages-and-links)
 - [Step 1: Styles](https://codesandbox.io/s/github/FrontendMasters/gatsby-intro/tree/step1/styles)
 - [Step 2: GraphQL & SEO](https://codesandbox.io/s/github/FrontendMasters/gatsby-intro/tree/step2/graphql-and-seo)
 - [Step 3: MDX](https://codesandbox.io/s/github/FrontendMasters/gatsby-intro/tree/step3/mdx)
@@ -58,7 +46,7 @@ Refer to the Course Errata below if you are running into issues.
 1. Have a text editor installed, i.e. [VSCode](https://code.visualstudio.com/)
 2. Have the Gatsby CLI (gatsby-cli) installed globally by running:
    `npm install -g gatsby-cli`
-   
+
 ## Course Errata
 
 ### Video: [Rendering Components in MDX](https://frontendmasters.com/courses/gatsby/rendering-components-in-mdx/) video at 1 minute, 32 seconds where Jason installs the Gatsby MDX plugin.
@@ -112,7 +100,7 @@ export const query = graphql`
 `
 ```
 
-Instead of 
+Instead of
 
 ```javascript
 export const query = graphql`
