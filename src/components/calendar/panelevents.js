@@ -23,7 +23,7 @@ const Content = ({ previewDate }) => {
     const db = allEventsData(DBCallParameter)
    
     return (
-            <div className={eventStyles.lockySubdiv}>
+            <div className={eventStyles.container}>
                 <ul ref={elem => listRef = elem}
                  className={eventStyles.list}
                  >{db.map((item, idx) => (

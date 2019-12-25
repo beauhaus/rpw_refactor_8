@@ -16,8 +16,8 @@ const Panel = ({ previewDate }) => {
 
     return (
         <div className={panelStyles.container}>
+            <h1 className={panelStyles.selectedDate} ref={elem => dateRef = elem}>{moment(previewDate).format("MM/DD")}</h1>
             <Locky enabled={false} >
-            <h1 className={panelStyles.selectedDate} ref={elem => dateRef = elem}>{moment(previewDate).format("MMM DD")}</h1>
                 <PanelEvents previewDate={previewDate} />
             </Locky>
         </div>
