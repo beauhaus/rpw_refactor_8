@@ -30,7 +30,7 @@
         text-align: center;
 
         &>div {
-            color: #fff;
+            color: $primary-midnightblue;
 
             grid-row: 1;
             grid-column: 2;
@@ -68,7 +68,7 @@
         width: 32px;
         display: block;
         height: 30px;
-        color: #cccccc;
+        color: $primary-midnightblue;
         margin: auto;
         font-weight: 400;
         // border-radius: 5px;
@@ -80,15 +80,15 @@
         // color: #fff;
 
         &>p {
-            font-weight: 500;
+            font-weight: 600;
         }
         
         &>.day-number {
             opacity: 1;
-            font-weight: 600;
-            color: #fff;
+            font-weight: bold;
+            // color: #fff;
             // filter: drop-shadow(2px 2px 4px 3px red);
-            text-shadow: #fff 1px 0 10px;
+            text-shadow: rgba(255, 255, 255, 0.65) 1px 1px 1px;
             // background: rgba(102, 102, 102, 0.1);
         }
     }
@@ -98,53 +98,53 @@
 *******************/
     .gameClass {
         color: #fff;
-        background: $secondary-weborange;
+        background: $primary-midnightblue;
     }
 
     .show {
         color: #000;
-        background: $secondary-internatorange;
+        background: $primary-midnightblue;
     }
 
     .meeting {
         color: #000;
-        background: $secondary-weborange;
+        background: $primary-midnightblue;
     }
 
     .party-class {
         color: #000;
-        background: $secondary-daisybushpurple;
+        background: $primary-midnightblue;
     }
 
     .chess-beginner {
         color: #252525;
-        background: lighten($secondary-weborange, 30%);
+        background: $primary-midnightblue;
     }
 
     .robotics-beginner {
         color: #000;
-        background: #6ed1a8;
+        background: $primary-midnightblue;
     }
 
     .chess-intermediate {
         color: #252525;
-        background: lighten($secondary-weborange, 15%);
+        background: $primary-midnightblue;
     }
 
     .chess-advanced {
         color: #252525;
-        background: lighten($secondary-weborange, 0%);
+        background: $primary-midnightblue;
 
     }
 
     .oilpainting-beginner {
         color: #ffffff;
-        background: $secondary-daisybushpurple;
+        background: $primary-midnightblue;
     }
 
     .party-private {
         color: #eee;
-        background: royalblue;
+        background: $primary-midnightblue;
     }
 }
 

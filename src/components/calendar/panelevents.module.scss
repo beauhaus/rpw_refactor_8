@@ -3,18 +3,18 @@
     position: relative;
     padding: 2%;
     height: 43vh;
+    background: green;
     .list {
         overflow: scroll;
         -webkit-overflow-scrolling: touch;
-
         height: 46vh;
         padding-top: 2vh;
-        // background-color: pink;
+        background-color: pink;
         opacity: 0;
-        transform: translateY(-200px);
+        // transform: translateY(-200px);
         text-align: left;
 
-        h1 {
+        h1.evt-title {
             font-weight: 100;
             color: #575757;
             margin-bottom: 0.5rem;

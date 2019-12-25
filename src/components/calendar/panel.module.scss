@@ -6,14 +6,18 @@
     grid-column: 1;
     max-width: 97vw;
     // background:lighten( $primary-robinseggblue, 0% );
-    overflow: hidden;
-    padding: 0;
+    padding: 0 0.4rem;
     margin: 0;
-    background: #d8d8d8;
+    border: 1px solid brown;
+    // background: transparent;
+    text-align: right;
     height: 45vh;
     box-shadow: inset 0px 4px 9px 0px rgba(0, 0, 0, 0.418);
     border-radius: 6px;
-    h1 {
-        color: #8b8b8b;
+    overflow: hidden; /* without this a scrollbar appears*/
+    h1.selected-date {
+        // color: rgba(0, 0, 0, 0.2);
+        color: purple;
+        
     }
 }

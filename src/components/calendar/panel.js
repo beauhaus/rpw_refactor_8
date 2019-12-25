@@ -4,7 +4,7 @@ import moment from 'moment';
 import { gsap } from "gsap";
 
 import panelStyles from './panel.module.scss';
-import DaysEvents from './daysevents'
+import PanelEvents from './panelevents'
 
 const Panel = ({ previewDate }) => {
     let dateRef = useRef(null)
@@ -17,8 +17,8 @@ const Panel = ({ previewDate }) => {
     return (
         <div className={panelStyles.container}>
             <Locky enabled={false} >
-            <h1 ref={elem => dateRef = elem}>{moment(previewDate).format("MMM DD")}</h1>
-                <DaysEvents previewDate={previewDate} />
+            <h1 className={panelStyles.selectedDate} ref={elem => dateRef = elem}>{moment(previewDate).format("MMM DD")}</h1>
+                <PanelEvents previewDate={previewDate} />
             </Locky>
         </div>
     )
