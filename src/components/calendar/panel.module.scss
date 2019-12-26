@@ -15,7 +15,7 @@
         box-shadow: inset 0px 4px 9px 0px rgba(0, 0, 0, 0.418);
         border-radius: 6px;
         overflow: hidden;
-        position: relative;
+        position: relative; //❓
         /* without this a scrollbar appears*/
         &> div { /* locky*/
             position: absolute;
