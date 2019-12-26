@@ -17,50 +17,31 @@
         margin: 0;
         height: 100%;
         width: 100%;
-        // border: 1px solid coral;
         outline: none;
         display: grid;
-        color: #fff;
-
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        // background: rgba(239, 133, 253, 0.5);
         background: transparent;
         font-size: 0.8rem;
+        position: relative;        
         text-align: center;
-        
-        &>div {
+        & div {
             color: $primary-midnightblue;
-
-            grid-row: 1;
-            grid-column: 2;
-            // outline: 1px solid black;
+            margin: auto;
             padding: 0;
-            margin: 0;
             font-size: 0.8rem;
         }
 
-        &>p {
-            // color: maroon;
-            // outline: 1px solid pink;
-            padding: 0;
-            margin-bottom: 0;
-            margin: 0 auto;
-            margin-top: -3px;
+        & p {
             font-size: 0.01rem;
-            display: block;
             width: 5px;
             height: 5px;
             border-radius: 50%;
             overflow: hidden;
-            // box-shadow: 1px 1px 2px 0px rgb(36, 36, 36);
+            margin-bottom: 0;
 
-            box-shadow: 1px 1px 2px 0px #000;
-
-            // position: absolute;
-            // top: 50%;
-            // left: 50%;
-            // transform: translateX(-50% -50%);
+             position: absolute;
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
     }
 
@@ -71,8 +52,6 @@
         color: $primary-midnightblue;
         margin: auto;
         font-weight: 400;
-        // border-radius: 5px;
-        // box-shadow: inset -1px -1px 0px 0px $primary-midnightblue;
     }
 
     .current-date {
@@ -86,10 +65,7 @@
         &>.day-number {
             opacity: 1;
             font-weight: bold;
-            // color: #fff;
-            // filter: drop-shadow(2px 2px 4px 3px red);
-            text-shadow: rgba(255, 255, 255, 0.65) 1px 1px 1px;
-            // background: rgba(102, 102, 102, 0.1);
+           text-shadow: rgba(255, 255, 255, 0.65) 1px 1px 1px;
         }
     }
 
@@ -155,7 +131,7 @@
 @media screen and (min-width: 768px) {
     .container {
         background: transparent;
-        border-radius: 5px;
+        border-radius: 6px;
         font-weight: 100;
         color: $primary-midnightblue;
         padding: 2px;
@@ -216,7 +192,7 @@
             left: 0;
             height: 30px;
             color: $primary-magenta;
-            border-radius: 5px;
+            border-radius: 6px;
             box-shadow: inset -1px -1px 0px 0px $primary-midnightblue;
         }
 

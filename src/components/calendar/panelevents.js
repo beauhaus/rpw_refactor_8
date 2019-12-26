@@ -17,7 +17,7 @@ const Content = ({ previewDate }) => {
     useEffect(() => {
         gsap.set(listRef, { opacity: 0, y: 60 })
         const tl = gsap.timeline({ defaults: { opacity: 1 } })
-        tl.to(listRef, { duration: 1, y: 0, ease: "back(1.4)" }, '-=0')
+        tl.to(listRef, { duration: 2, y: 0, ease: "back(1.8)" }, '-=0')
     }, [previewDate])
 
     const db = allEventsData(DBCallParameter)
