@@ -9,29 +9,36 @@
         // background:lighten( $primary-robinseggblue, 0% );
         padding: 0 0.4rem;
         margin: 0;
-        border: 1px dashed white;
+        border-radius: 5%;
+        // border: 1px dashed white;
         // background: transparent;
         text-align: right;
-        height: 45vh;
+        // height: 45vh;
         box-shadow: inset 0px 4px 9px 0px rgba(0, 0, 0, 0.418);
         border-radius: 6px;
         overflow: hidden;
         position: relative;
         /* without this a scrollbar appears*/
-        &> div {
+        &> div { /* locky*/
             position: absolute;
             top: 0;
             left: 0;
-            width: 100%;
-            border: 1px solid red;
+            bottom: 0;
+            right: 0;
+            // border: 1px solid red;
+            border-radius: 5px;
+
         }
         h1.selected-date {
             // color: rgba(0, 0, 0, 0.2);
             color: rgba(0, 0, 0, 0.3);
             font-weight: 300;
+            font-size: 1.5rem;
             position: absolute;
             top: 0;
             right: 1vw;
             z-index: 10;
+            font-variant: small-caps;
+            font-style: italic;
     }
 }

@@ -4,7 +4,7 @@
 
     width: 100vw;
     height: 100vh;
-    height: 94vh;
+    // height: 94vh;
     /*account for header */
     // position: absolute;
     top: 8.5vh;
@@ -14,7 +14,7 @@
     // border: 1px solid yellow;
     // grid-template-columns: 1fr 2fr;
     grid-template-columns: 1fr;
-    grid-template-rows: 8vh 40vh 45vh; // divided by 94
+    grid-template-rows: 8vh 40vh 51vh; // divided by 94
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     background: $primary-mistgrey;
     // $secondary-daisybushpurple
