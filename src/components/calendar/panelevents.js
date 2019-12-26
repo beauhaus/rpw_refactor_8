@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { gsap } from "gsap";
-import {Link} from 'gatsby';
+import { Link } from 'gatsby';
 
 import allEventsData from '../../hooks/use-alleventspreview';
 
@@ -12,7 +12,7 @@ const Content = ({ previewDate }) => {
     useEffect(() => {
         setDBCallParameter(previewDate)
     }, [previewDate])
-  
+
     let listRef = useRef(null)
     useEffect(() => {
         gsap.set(listRef, { opacity: 0, y: 60 })
@@ -21,22 +21,20 @@ const Content = ({ previewDate }) => {
     }, [previewDate])
 
     const db = allEventsData(DBCallParameter)
-   
+
     return (
-            <div className={eventStyles.container}>
-                <ul ref={elem => listRef = elem}
-                 className={eventStyles.list}
-                 >{db.map((item, idx) => (
-                    <li key={idx} className={eventStyles[`${item.event.stylecode}`]}>
-                        <h1 className={eventStyles.evtTitle}>{item.event.title}</h1>
-                        <span>{item.event.hours}</span>
-                        <p>{item.event.desc}</p>
-                        <Link to={item.event.slug}>{item.event.slug ? "find out more!" : "link to event page"}</Link>
-                        <hr />
-                    </li>
-                    ))}
-                </ul>
-            </div>
+        <ul ref={elem => listRef = elem}
+            className={eventStyles.listContainer}
+        >{db.map((item, idx) => (
+            <li key={idx} className={eventStyles[`${item.event.stylecode}`]}>
+                <h1 className={eventStyles.evtTitle}>{item.event.title}</h1>
+                <span>{item.event.hours}</span>
+                <p>{item.event.desc}</p>
+                <Link to={item.event.slug}>{item.event.slug ? "find out more!" : "link to event page"}</Link>
+                <hr />
+            </li>
+        ))}
+        </ul>
     )
 };
 

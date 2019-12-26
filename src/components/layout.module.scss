@@ -10,7 +10,8 @@
     // grid-template-rows: 8vh auto 12vh;
     grid-template-rows: 8vh 1fr 12vh;
     background: var(--rudy-blue);
-    overflow: hidden; /*calskroll fix*/
+
+    // overflow: hidden; /*calskroll fix*/ //❓
     main {
         /* edit: main seems to slip underneath fixed header*/
         margin-top: 1vh;

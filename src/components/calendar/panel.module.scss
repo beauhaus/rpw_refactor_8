@@ -15,19 +15,14 @@
         box-shadow: inset 0px 4px 9px 0px rgba(0, 0, 0, 0.418);
         border-radius: 6px;
         overflow: hidden;
-        position: relative; //❓
+
+        // position: relative; //❓
         /* without this a scrollbar appears*/
         &> div { /* locky*/
-            position: absolute;
-            top: 0;
-            left: 0;
-            bottom: 0;
-            right: 0;
-            width: 98vw;
-            // border: 1px solid red;
+            width: 100%;
+            border: 1px solid green;
             border-radius: 6px;
             box-shadow: inset 0px 4px 9px 0px rgba(0, 0, 0, 0.418);
-
         }
         h1.selected-date {
             // color: rgba(0, 0, 0, 0.2);
