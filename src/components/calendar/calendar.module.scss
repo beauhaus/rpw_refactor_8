@@ -4,13 +4,8 @@
 
     width: 100vw;
     height: 100vh;
-    // height: 94vh;
-    /*account for header */
-    // position: absolute;
-    top: 8.5vh;
-    // margin: 2vh auto; /* keep?*/
     display: grid;
-    padding: 0 0.4rem 0.2rem 0.4rem;
+    padding: 0.4rem 0;
     // border: 1px solid yellow;
     // grid-template-columns: 1fr 2fr;
     grid-template-columns: 1fr;
@@ -21,8 +16,11 @@
     background: linear-gradient(30deg, $secondary-weborange -30%, $secondary-weborange 90%);
     border-radius: 6px;
 
-    position: absolute;
-    z-index: 100;
+
+    position: absolute; //❓
+    /*account for header */
+    top:8.5vh;//❓
+    z-index: 90;
 }
 
 
