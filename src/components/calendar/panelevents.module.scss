@@ -2,7 +2,7 @@
     padding: 2%;
     
     border-radius: 6px; 
-    width: 90%;
+    width: 100%;
     padding-top: 2vh;
     opacity: 0.5;
     text-align: left;
@@ -11,8 +11,8 @@
     background: yellow;
     height: 43vh; //!!
     overflow: scroll;
-    // position: relative; //?
-    -webkit-overflow-scrolling: touch;
+    position: relative; //?
+    // -webkit-overflow-scrolling: touch;
     // width: 92vw;
     // li {
     //     padding-top: 1vh;

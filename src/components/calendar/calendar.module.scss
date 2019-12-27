@@ -3,13 +3,13 @@
 .container {
 
     width: 100vw;
-    height: 100vh;
+    height: 92vh;
     display: grid;
     padding: 0.4rem 0;
     // border: 1px solid yellow;
     // grid-template-columns: 1fr 2fr;
     grid-template-columns: 1fr;
-    grid-template-rows: 8vh 40vh 51vh; // divided by 94
+    grid-template-rows: 8vh 40vh 43vh;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     background: $primary-mistgrey;
     // $secondary-daisybushpurple
@@ -17,8 +17,8 @@
     border-radius: 6px;
     
     /*account for header */
-    // position: absolute; //❓
-    // top:8.5vh;//❓
+    position: absolute; //❓
+    top:8.5vh;//❓
     // z-index: 90;
 }
 
