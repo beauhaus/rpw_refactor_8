@@ -8,7 +8,7 @@
         padding: 0 0.4rem;
         margin: 0.5vh 1vw;
         border-radius: 5%;
-        // border: 1px dashed white;
+        border: 1px dashed fuchsia;
         background: whitesmoke;
         text-align: right;
         // height: 45vh;
@@ -17,13 +17,18 @@
         overflow: hidden;
 
         // position: relative; //❓
+        /* according to example, this must be pos: abs...
+        to keep it in place, outer "skin" must be pos:rel*/
+        // position: absolute;
         /* without this a scrollbar appears*/
-        &> div { /* locky*/
-            width: 100%;
-            border: 1px solid green;
-            border-radius: 6px;
-            box-shadow: inset 0px 4px 9px 0px rgba(0, 0, 0, 0.418);
-        }
+        // .inner-wrapper {
+            &> div { /* locky*/
+                width: 100%;
+                border: 1px solid green;
+                border-radius: 6px;
+                box-shadow: inset 0px 4px 9px 0px rgba(0, 0, 0, 0.418);
+            }
+        // }
         h1.selected-date {
             // color: rgba(0, 0, 0, 0.2);
             color: rgba(0, 0, 0, 0.3);
