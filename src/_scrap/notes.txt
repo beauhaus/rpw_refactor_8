@@ -7,10 +7,11 @@
 
 
       --panel
-
+(pos:abs)
       
         --panEvts
-
+overflow: scroll;
+    position: relative; //?
 
       --panel
 

@@ -15,16 +15,16 @@
         background: fuchsia;
         
         // overflow: scroll; // ?
-        // position: relative; //❓
+        position: relative; //❓
         
      
             
             &> div { /* locky*/
           
-                // position: absolute; //❓
-                // top: 0;
-                // height: 45vh;
-                // width: 97vw;
+                position: absolute; //❓
+                top: 0;
+                height: 45vh;
+                width: 97vw;
                 background-color: green;
                 border-radius: 6px;
                 width: 92vw;;    // box-shadow: inset 0px 4px 9px 0px rgba(0, 0, 0, 0.418);
