@@ -24,7 +24,7 @@ const Content = ({ previewDate }) => {
 
     return (
         <ul ref={elem => listRef = elem}
-            className={eventStyles.listContainer}
+            className={eventStyles.paneleventsContainer}
         >{db.map((item, idx) => (
             <li key={idx} className={eventStyles[`${item.event.stylecode}`]}>
                 <h1 className={eventStyles.evtTitle}>{item.event.title}</h1>

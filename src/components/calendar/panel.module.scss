@@ -22,17 +22,20 @@
         // position: absolute;
         /* without this a scrollbar appears*/
         .inner-wrapper {
-                        position: relative; //❓
-                        
-                        
-                        
-                        &> div { /* locky*/
-                            position: absolute; /* only on Desktop?*/
-                            overflow: scroll;
-                            width: 100%;
+            
+            position: absolute; //❓
+            height: 51vh;
+            
+            
+            
+            &> div { /* locky*/
+                //             position: absolute; /* only on Desktop?*/
+                //             overflow: scroll;
+                //             width: 100%;
                 border: 1px solid green;
                 border-radius: 6px;
-                box-shadow: inset 0px 4px 9px 0px rgba(0, 0, 0, 0.418);
+                // box-shadow: inset 0px 4px 9px 0px rgba(0, 0, 0, 0.418);
+
             }
         }
         h1.selected-date {
@@ -40,11 +43,11 @@
             color: rgba(0, 0, 0, 0.3);
             font-weight: 300;
             font-size: 1.5rem;
-            position: absolute;
             top: 1vh;
             right: 2vw;
             z-index: 10;
             font-variant: small-caps;
             font-style: italic;
+            position: absolute;
     }
 }

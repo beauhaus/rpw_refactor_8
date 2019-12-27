@@ -1,17 +1,17 @@
-.list-container {
-    overflow: scroll;
-    position: relative;
+.panelevents-container { // ul
     padding: 2%;
-    // background: wheat;
-    border-radius: 6px; // ul 
-    overflow: scroll;
-    -webkit-overflow-scrolling: touch;
+    background: wheat;
+    border-radius: 6px; 
     height: 100%;
     width: 100%;
     padding-top: 2vh;
     opacity: 0;
     text-align: left;
-
+    
+    overflow: scroll;
+    position: relative;
+    // -webkit-overflow-scrolling: touch;
+    height: 51vh;
     li {
         padding-top: 1vh;
         position: relative;
