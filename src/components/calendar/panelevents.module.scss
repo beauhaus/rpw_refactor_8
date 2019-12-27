@@ -5,7 +5,7 @@
     height: 100%;
     width: 100%;
     padding-top: 2vh;
-    opacity: 0;
+    opacity: 0.5;
     text-align: left;
     
     overflow: scroll;
@@ -16,7 +16,7 @@
     height: 51vh;
     li {
         padding-top: 1vh;
-        position: relative;
+        // position: relative;
         border: 2px solid blue;
 
         h1.evt-title {
@@ -27,7 +27,7 @@
         }
 
         span {
-            position: absolute;
+            // position: absolute;
             bottom: 0;
             right: 2vw;
             text-align: right;

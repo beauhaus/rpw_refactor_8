@@ -16,16 +16,16 @@
         border-radius: 6px;
         
 
-        position: relative; //❓
+        // position: relative; //❓
         /* according to example, this must be pos: abs...
         to keep it in place, outer "skin" must be pos:rel*/
         // position: absolute;
         /* without this a scrollbar appears*/
-        .inner-wrapper {
-            overflow: scroll;
-            position: absolute; //❓
-            height: 51vh;
-            width: 100%;
+        // .inner-wrapper {
+        //     overflow: scroll;
+        //     position: absolute; //❓
+        //     height: 51vh;
+        //     width: 100%;
             
             
             
@@ -38,7 +38,7 @@
                 width: 100%;    // box-shadow: inset 0px 4px 9px 0px rgba(0, 0, 0, 0.418);
 
             }
-        }
+        // }
         h1.selected-date {
             // color: rgba(0, 0, 0, 0.2);
             color: rgba(0, 0, 0, 0.3);
