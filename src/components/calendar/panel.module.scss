@@ -14,15 +14,15 @@
         
         background: fuchsia;
         
-        // overflow: scroll; // ?
-        position: relative; //❓
+        // position: relative; //❓
         
-     
+        
+        
+        &> div { /* locky*/
             
-            &> div { /* locky*/
-          
-                position: absolute; //❓
-                top: 0;
+                // overflow: scroll; // ?
+                // position: absolute; //❓
+                // top: 0;
                 height: 45vh;
                 width: 97vw;
                 background-color: green;
