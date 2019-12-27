@@ -14,21 +14,28 @@
         // height: 45vh;
         box-shadow: inset 0px 4px 9px 0px rgba(0, 0, 0, 0.418);
         border-radius: 6px;
-        overflow: hidden;
+        // overflow: hidden;
+        overflow: scroll;
 
         // position: relative; //❓
         /* according to example, this must be pos: abs...
         to keep it in place, outer "skin" must be pos:rel*/
         // position: absolute;
         /* without this a scrollbar appears*/
-        // .inner-wrapper {
-            &> div { /* locky*/
-                width: 100%;
+        .inner-wrapper {
+                        position: relative; //❓
+                        
+                        
+                        
+                        &> div { /* locky*/
+                            position: absolute; /* only on Desktop?*/
+                            overflow: scroll;
+                            width: 100%;
                 border: 1px solid green;
                 border-radius: 6px;
                 box-shadow: inset 0px 4px 9px 0px rgba(0, 0, 0, 0.418);
             }
-        // }
+        }
         h1.selected-date {
             // color: rgba(0, 0, 0, 0.2);
             color: rgba(0, 0, 0, 0.3);
