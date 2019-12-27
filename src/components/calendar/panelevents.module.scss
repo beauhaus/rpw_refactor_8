@@ -1,25 +1,25 @@
 .panelevents-container { // ul
     padding: 2%;
-    background: wheat;
+    
     border-radius: 6px; 
-    height: 100%;
-    width: 100%;
+    width: 90%;
     padding-top: 2vh;
     opacity: 0.5;
     text-align: left;
     
+    
+    background: yellow;
+    height: 45vh; //!!
     overflow: scroll;
-
     position: relative; //?
     
     // -webkit-overflow-scrolling: touch;
-    height: 51vh;
-    width: 97vw;
+    // width: 92vw;
     li {
         padding-top: 1vh;
         // position: relative;
         border: 2px solid blue;
-        width: 97vw;
+        width: 100%;
         h1.evt-title {
             font-size: 1.8rem;
             font-weight: 100;
