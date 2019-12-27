@@ -10,13 +10,13 @@
     
     background: yellow;
     height: 43vh; //!!
-    overflow: scroll;
-    position: relative; //?
-    -webkit-overflow-scrolling: touch;
+    // overflow: scroll;
+    // position: relative; //?
+    // -webkit-overflow-scrolling: touch;
     // width: 92vw;
     li {
         padding-top: 1vh;
-        position: relative;
+        // position: relative;
         border: 2px solid blue;
         width: 100%;
         h1.evt-title {
