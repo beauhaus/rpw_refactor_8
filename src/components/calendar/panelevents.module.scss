@@ -9,11 +9,10 @@
     
     
     background: yellow;
-    height: 45vh; //!!
+    height: 43vh; //!!
     overflow: scroll;
     position: relative; //?
-    
-    // -webkit-overflow-scrolling: touch;
+    -webkit-overflow-scrolling: touch;
     // width: 92vw;
     li {
         padding-top: 1vh;
@@ -34,6 +33,9 @@
             text-align: right;
             font-style: oblique;
             font-variant-caps: small-caps;
+        }
+        p {
+            line-height: 3;
         }
 
     }
