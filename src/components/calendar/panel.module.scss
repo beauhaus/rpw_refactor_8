@@ -14,7 +14,7 @@
         // height: 45vh;
         box-shadow: inset 0px 4px 9px 0px rgba(0, 0, 0, 0.418);
         border-radius: 6px;
-        overflow: scroll;
+        
 
         // position: relative; //❓
         /* according to example, this must be pos: abs...
@@ -22,7 +22,7 @@
         // position: absolute;
         /* without this a scrollbar appears*/
         .inner-wrapper {
-            
+            overflow: scroll;
             position: absolute; //❓
             height: 51vh;
             
