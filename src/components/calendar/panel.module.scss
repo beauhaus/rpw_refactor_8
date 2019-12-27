@@ -25,6 +25,7 @@
             overflow: scroll;
             position: absolute; //❓
             height: 51vh;
+            width: 100%;
             
             
             
@@ -34,7 +35,7 @@
                 //             width: 100%;
                 border: 1px solid green;
                 border-radius: 6px;
-                // box-shadow: inset 0px 4px 9px 0px rgba(0, 0, 0, 0.418);
+                width: 100%;    // box-shadow: inset 0px 4px 9px 0px rgba(0, 0, 0, 0.418);
 
             }
         }
