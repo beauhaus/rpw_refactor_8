@@ -2,7 +2,6 @@ import React from 'react';
 import NavLink from './navlink';
 // import rpwLogo from '../images/rpw-main-icon-300.jpg';
 import landingStyles from './landing.module.scss';
-import Calendar from './calendar/calendar'
 const Landing = () => (
     <main className={landingStyles.landingContainer}>
         <section className={landingStyles.landingContentContainer}>
@@ -10,9 +9,12 @@ const Landing = () => (
             {/* <div className={landingStyles.textContainer}>
                 <h1>PLACE</h1>
             </div> */}
-                <Calendar/>
+               
             <button className={landingStyles.joinBtn}>
                 <NavLink to="/contact/" className="cta-join" textContent="Contact" />
+            </button> 
+            <button className={landingStyles.joinBtn}>
+                <NavLink to="/evtcalendar/" className="cta-join" textContent="Calendar" />
             </button> 
         </section>
     </main>
