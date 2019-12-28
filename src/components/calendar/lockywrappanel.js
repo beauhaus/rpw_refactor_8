@@ -19,7 +19,8 @@ const LockyWrapPanel = () => (
                     background: "wheat",
                     gridRow: "4/7",
                     gridColumn: "3/5",
-                    border: "1px solid red"
+                    border: "1px solid red",
+                    overflow: "scroll"
                 }}
             >
                 <Locky enabled={false}>
