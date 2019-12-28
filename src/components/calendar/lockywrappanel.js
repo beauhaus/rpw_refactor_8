@@ -4,21 +4,23 @@ import Locky from "react-locky";
 
 
 const LockyWrapPanel = () => (
-        <div
-            className="div1"
-            style={{
-                display: "grid",
-                gridRow: 3,
-                gridColumn: 1,
-                border: "4px dashed fuchsia"
-            }}
-        >
+        // <div
+        //     className="div1"
+        //     style={{
+        //         display: "grid",
+        //         gridRow: 3,
+        //         gridColumn: 1,
+        //         border: "4px dashed fuchsia"
+        //     }}
+        // >
             <div
                 className="div2"
                 style={{
                     background: "wheat",
-                    gridRow: "4/7",
-                    gridColumn: "3/5",
+                    // gridRow: "4/7",
+                    // gridColumn: "3/5",
+                    width: "45vw",
+                    height: "45vh",
                     border: "1px solid red",
                     overflow: "scroll"
                 }}
@@ -47,6 +49,6 @@ const LockyWrapPanel = () => (
                 </Locky>
                     <button onClick={() => alert("You clicked!")}>click me</button>
             </div>
-        </div>
+        // </div>
 );
 export default LockyWrapPanel;
