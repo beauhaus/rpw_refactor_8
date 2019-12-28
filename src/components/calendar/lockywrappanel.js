@@ -30,7 +30,6 @@ const LockyWrapPanel = () => (
                         style={{
                             background: "pink",
                             overflow: "scroll",
-                            // position: "relative",
                             height: 200
                         }}
                     >
@@ -45,8 +44,8 @@ const LockyWrapPanel = () => (
                         <p>9******************************</p>
                         <p>*******************************</p>
                     </div>
-                    <button onClick={() => alert("You clicked!")}>click me</button>
                 </Locky>
+                    <button onClick={() => alert("You clicked!")}>click me</button>
             </div>
         </div>
 );
