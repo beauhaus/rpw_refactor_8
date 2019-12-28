@@ -1,8 +1,8 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import moment from 'moment'
 import { monthArrayMaker } from '../utils/utils'
 
-import LockyWrap from '../components/calendar/lockywrappanel'
+import PreviewPanel from '../components/calendar/calprevpanel'
 import CalNav from '../components/calendar/calnav'
 import DaysGrid from '../components/calendar/daysgrid'
 
@@ -19,10 +19,12 @@ const EvtCalendar = () => {
 
     const incrementMonth = () => {
         let addMonth = moment(selectedDate).add(1, 'month').format("YYYY-MM-DD");
+        console.log("INC!")
         return setSelectedDate(addMonth)
     }
 
     const decrementMonth = () => {
+        console.log("Dec!!")
         let subtractMonth = moment(selectedDate).subtract(1, 'month').format("YYYY-MM-DD");
         return setSelectedDate(subtractMonth)
     }
@@ -34,19 +36,22 @@ const EvtCalendar = () => {
     /********************************************************/
 
     const daysArr = monthArrayMaker(selectedDate)
-    
+
     return (
         <main className={evtCalStyles.container}>
-            <CalNav 
-            previewDate={previewDate}
+            <CalNav
+                decMonth={decrementMonth}
+                incMonth={incrementMonth}
+                selectedDate={selectedDate}
             />
             <DaysGrid
-            daysArr={daysArr}
-            selectedDate={selectedDate}
-            dayClick={selectDay} 
+                daysArr={daysArr}
+                selectedDate={selectedDate}
+                dayClick={selectDay}
             />
-            <button onClick={() => alert("You clicked!")}>click me</button>
-            <LockyWrap className={evtCalStyles.div2} />
+            <PreviewPanel className={evtCalStyles.div2}
+                previewDate={previewDate}
+            />
         </main>
     )
 }
