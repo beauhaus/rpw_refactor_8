@@ -18,12 +18,12 @@ const LockyWrapPanel = () => (
                 <Locky enabled={false}>
                     inner scrollable
 
-        <div className="div3"
-                        style={{
-                            background: "pink",
-                            overflow: "scroll",
-                            height: 200
-                        }}
+        <div className={lockypanelStyles.evtsFrame}
+                        // style={{
+                        //     background: "pink",
+                        //     overflow: "scroll",
+                        //     height: 200
+                        // }}
                     >
                         <p>1******************************</p>
                         <p>2******************************</p>
