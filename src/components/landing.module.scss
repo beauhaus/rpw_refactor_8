@@ -48,13 +48,10 @@ main.landing-container {
         text-align: center;
         padding: 2vh auto;
         
-        // position: relative; //❓
+        position: relative; //❓
         //     overflow: scroll;
 
 
-      position: absolute; /* only on Desktop?*/
-      top: 0; /* ✅?*/
-      z-index: 90;
     
 
         img {
