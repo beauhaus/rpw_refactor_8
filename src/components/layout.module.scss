@@ -12,6 +12,7 @@
     background: var(--rudy-blue);
 
     overflow: hidden;  //❓
+    position: relative;
     main {
         /* edit: main seems to slip underneath fixed header*/
         margin-top: 1vh;

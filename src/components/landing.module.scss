@@ -21,7 +21,8 @@ $picHm: 40vh;
 /**** footer row3 ****/
 
 main.landing-container {
-    
+    position: relative; //?
+
     grid-row: 2;
     text-align: center;
     width: 100vw;
@@ -48,11 +49,11 @@ main.landing-container {
         padding: 2vh auto;
         
         // position: relative; //❓
-            // overflow: scroll;
+        //     overflow: scroll;
 
 
-    //   position: absolute; /* only on Desktop?*/
-    //   top: 0; /* ✅?*/
+      position: absolute; /* only on Desktop?*/
+      top: 0; /* ✅?*/
     
 
         img {
