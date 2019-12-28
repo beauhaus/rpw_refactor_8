@@ -25,7 +25,7 @@ const LockyWrapPanel = () => (
         border: "1px solid red"
       }}
     >
-      <Locky enabled={true}>
+      <Locky enabled={false}>
         inner scrollable
         <div
           className="div3"
