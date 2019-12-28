@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import moment from 'moment'
 import CalNav from './calnav'
 import { monthArrayMaker } from '../../utils/utils'
-import Panel from './panel'
+import LockyWrapPanel from './lockywrappanel'
 
 
 import calendarStyles from './calendar.module.scss';
@@ -40,7 +40,9 @@ const MonthCalendar = () => {
                 incMonth={incrementMonth}
                 selectedDate={selectedDate}
             />
-            <Panel previewDate={previewDate} />
+            {/* <Panel previewDate={previewDate} /> */}
+
+            <LockyWrapPanel/>
             <DaysGrid
                 daysArr={daysArr}
                 selectedDate={selectedDate}
