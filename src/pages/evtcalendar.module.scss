@@ -2,12 +2,14 @@
 
 .container {
     border: 2px solid red;
-    // position: fixed;
-    // top: 0;
-    // left:0;
-    // right: 0;
-    // bottom:0;
     background-color: #90bdb2;
-    height: 100vh;
+    height: 109vh;
     overflow-y: hidden;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 8vh 42vh 50vh;
+    
+    padding-top: 8.5vh;
+    
 }
+

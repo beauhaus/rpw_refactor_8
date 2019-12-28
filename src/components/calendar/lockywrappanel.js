@@ -2,33 +2,23 @@ import React from "react";
 import Locky from "react-locky";
 
 
+import lockypanelStyles from './lockypanel.module.scss';
 
 const LockyWrapPanel = () => (
-        // <div
-        //     className="div1"
-        //     style={{
-        //         display: "grid",
-        //         gridRow: 3,
-        //         gridColumn: 1,
-        //         border: "4px dashed fuchsia"
-        //     }}
-        // >
             <div
-                className="div2"
-                style={{
-                    background: "wheat",
-                    // gridRow: "4/7",
-                    // gridColumn: "3/5",
-                    width: "45vw",
-                    height: "45vh",
-                    border: "1px solid red",
-                    overflow: "scroll"
-                }}
+                className={lockypanelStyles.container}
+                // style={{
+                //     background: "wheat",
+                //     gridRow: "3",
+                //     gridColumn: "1",
+                //     border: "1px solid red",
+                //     overflow: "scroll"
+                // }}
             >
                 <Locky enabled={false}>
                     inner scrollable
-        <div
-                        className="div3"
+
+        <div className="div3"
                         style={{
                             background: "pink",
                             overflow: "scroll",
@@ -47,8 +37,6 @@ const LockyWrapPanel = () => (
                         <p>*******************************</p>
                     </div>
                 </Locky>
-                    <button onClick={() => alert("You clicked!")}>click me</button>
             </div>
-        // </div>
 );
 export default LockyWrapPanel;

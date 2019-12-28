@@ -1,5 +1,5 @@
 import React from 'react'
-import Locky from "react-locky";
+// import Locky from "react-locky";
 
 // import Calendar from '../components/calendar/calendar'
 import evtCalStyles from './evtcalendar.module.scss'
@@ -14,7 +14,9 @@ const EvtCalendar = () => {
             <main className={evtCalStyles.container}>
                 {/* <Header/> */}
                 {/* <Calendar/> */}
-                <LockyWrap/>
+                <button onClick={() => alert("You clicked!")}>click me</button>
+
+                <LockyWrap className={evtCalStyles.div2}/>
             </main>
     )
 }
