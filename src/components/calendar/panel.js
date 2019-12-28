@@ -21,7 +21,7 @@ const Panel = ({ previewDate }) => {
             <Locky enabled={false} >
                 <div style={{
                     overflow: "scroll",
-                    // position: "relative",
+                    position: "relative", // ?
                     height: 200,
                     background: "pink"
                 }}>
