@@ -30,7 +30,7 @@ const LockyWrapPanel = () => (
                         style={{
                             background: "pink",
                             overflow: "scroll",
-                            // position: "relative",
+                            position: "relative",
                             height: 200
                         }}
                     >
