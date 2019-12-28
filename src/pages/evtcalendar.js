@@ -49,9 +49,7 @@ const EvtCalendar = () => {
                 selectedDate={selectedDate}
                 dayClick={selectDay}
             />
-            <PreviewPanel className={evtCalStyles.div2}
-                previewDate={previewDate}
-            />
+            <PreviewPanel previewDate={previewDate}/>
         </main>
     )
 }
