@@ -4,7 +4,6 @@ import Locky from "react-locky";
 
 
 const LockyWrapPanel = () => (
-    <Locky enabled={false}>
         <div
             className="div1"
             style={{
@@ -49,6 +48,5 @@ const LockyWrapPanel = () => (
                 </Locky>
             </div>
         </div>
-    </Locky>
 );
 export default LockyWrapPanel;
