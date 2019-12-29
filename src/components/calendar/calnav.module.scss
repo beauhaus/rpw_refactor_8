@@ -12,8 +12,7 @@
     align-items: center;
     height: 8vh;
     width: 100vw;
-    
-    padding: 0 1vw;
+    padding: 0 2vw;
     position: relative; //✅ for pos of h1
     h1 {
         font-weight: 200;
@@ -28,10 +27,10 @@
         height: 100%;
         outline: none;
         border-width: 0;
-        // position: absolute;
         display: flex;
         justify-content: center;
         transition: all .4s ease-in-out;
+        
         & > span {
             color: $secondary-weborange;
             display: inline-block;
@@ -42,7 +41,6 @@
             text-shadow: 2px 2px 2px rgba(70, 70, 70, 0.7);
             padding: 0.5rem;
             margin-top: -0.5vh;
-
             &:hover {
                 color: $primary-robinseggblue;
                 text-shadow: 2px 2px #000;
