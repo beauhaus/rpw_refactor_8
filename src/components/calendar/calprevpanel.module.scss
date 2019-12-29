@@ -1,11 +1,33 @@
 @import "../../styles/variables.scss";
 
 .container {
-      grid-row: 3;
-      grid-column: 1;
-      .evts-frame {
-          background: pink;
-          height: 43vh;  // don't use 100%!!
-          overflow: scroll;
-      }
+    grid-row: 3;
+    grid-column: 1;
+    overflow: hidden;
+    text-align: right;
+    border-radius: 6px;
+    box-shadow: inset 0px 4px 9px 0px rgba(0, 0, 0, 0.418);
+    margin: 0 0.5rem;
+    // background: rgb(241, 234, 221);
+    background: #f1f1f1;
+    color: $primary-midnightblue;
+    
+    h2.selected-date {
+        font-size: 1rem;
+        color: rgba(0, 0, 0, 0.4); // (alternative)
+        color: $primary-mistgrey;
+        margin: 1rem;
+    }
+    
+    .evts-frame {
+        padding: 0.5rem;
+        padding-top: 0;
+        // border: 1px dashed #000;
+        text-align: left;
+        background: transparent;
+        height: 40vh; // don't use 100%!!
+        overflow: scroll; // DONT TOUCH!
+
+        // color: $primary-midnightblue;
+    }
 }

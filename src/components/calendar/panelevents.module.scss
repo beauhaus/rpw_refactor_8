@@ -1,43 +1,68 @@
-.panelevents-container { // ul
-    padding: 2%;
-    
-    border-radius: 6px; 
-    width: 100%;
-    padding-top: 2vh;
-    opacity: 0.5;
-    text-align: left;
-    
-    
-    background: yellow;
-    height: 43vh; //!!
-    // overflow: scroll;
-    // position: relative; //?
-    // -webkit-overflow-scrolling: touch;
-    // width: 92vw;
-    li {
-        padding-top: 1vh;
-        // position: relative;
-        border: 2px solid blue;
-        width: 100%;
-        h1.evt-title {
-            font-size: 1.8rem;
-            font-weight: 100;
-            color: #575757;
-            margin: 1rem auto 0.5rem;
-        }
+@import "../../styles/variables.scss";
 
-        span {
-            // position: absolute;
-            bottom: 0;
-            right: 2vw;
-            text-align: right;
-            font-style: oblique;
-            font-variant-caps: small-caps;
-        }
-        p {
-            line-height: 3;
-        }
-
-    }
+.evt-title {
+ margin-bottom: 0;
+ font-weight: 400;
+ font-variant: small-caps;
 
 }
+
+.evt-hours {
+    font-variant: small-caps;
+    font-style: italic;
+    color: $secondary-abbeygrey;
+}
+
+.evt-desc {
+    margin-top: 0.5rem;
+    color: $secondary-abbeygrey;
+}
+
+.evt-link {
+    margin-bottom: 1rem;
+    font-style: italic;
+    &::before {
+        content: '...'
+    }
+}
+hr {
+    margin: 2rem 0 4rem;
+}
+
+
+// .panelevents-container { // ul
+    // padding: 2%;
+    
+    // border-radius: 6px; 
+    // width: 100%;
+    // padding-top: 2vh;
+    // opacity: 0.5;
+    // text-align: left;
+    // height: 43vh; // ❗️❗️
+    // li {
+    //     padding-top: 1vh;
+    //     // position: relative;
+    //     border: 2px solid blue;
+    //     width: 100%;
+    //     h1.evt-title {
+    //         font-size: 1.8rem;
+    //         font-weight: 100;
+    //         color: #575757;
+    //         margin: 1rem auto 0.5rem;
+    //     }
+
+    //     span {
+    //         // position: absolute;
+    //         bottom: 0;
+    //         right: 2vw;
+    //         text-align: right;
+    //         font-style: oblique;
+    //         font-variant-caps: small-caps;
+    //     }
+    //     p {
+    //         line-height: 3;
+    //     }
+
+    // }
+
+// }

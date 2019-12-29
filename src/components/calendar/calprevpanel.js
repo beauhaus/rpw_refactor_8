@@ -6,8 +6,6 @@ import PanelEvents from './panelevents'
 
 import allEventsData from '../../hooks/use-alleventspreview';
 
-
-
 import calprevpanelStyles from './calprevpanel.module.scss';
 
 const LockyWrapPanel = ({ previewDate }) => {
@@ -29,7 +27,7 @@ const LockyWrapPanel = ({ previewDate }) => {
 
         const tl = gsap.timeline({ defaults: { opacity: 1 } })
         tl.to(dateRef, { duration: .6, y: 0, ease: 'elastic(1,0.8)', delay: 0.2 })
-            .to(listRef, { duration: 2, y: 0, ease: "back(1.8)" }, '-=0')
+            .to(listRef, { duration: 2, y: 0, ease: "back(1.8)" }, '-=0.5')
 
     }, [previewDate])
 
@@ -38,16 +36,14 @@ const LockyWrapPanel = ({ previewDate }) => {
 
     return (
         <div className={calprevpanelStyles.container} >
-            <h1 className={calprevpanelStyles.selectedDate}
-                ref={elem => dateRef = elem}>{moment(previewDate).format("MM/DD")}</h1>
+            <h2 className={calprevpanelStyles.selectedDate}
+                ref={elem => dateRef = elem}>{moment(previewDate).format("dddd, MMMM Do")}</h2>
             <Locky enabled={false}>
-                {/* <div className={calprevpanelStyles.evtsFrame}> */}
                 <ul ref={elem => listRef = elem}
                     className={calprevpanelStyles.evtsFrame}
                 >
                     <PanelEvents db={db}/>
                 </ul>
-                {/* </div> */}
             </Locky>
         </div>
     )
