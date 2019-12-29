@@ -14,8 +14,10 @@ const PanelEvents = ({ db }) => {
                 <span className={eventStyles.evtHours}>{item.event.hours}</span>
                 <p className={eventStyles.evtDesc}>{item.event.desc}</p>
                 {/* <hr className={eventStyles.evtDivider} /> */}
-                <br/>
-                <Link className={eventStyles.evtLink} to={item.event.slug}>{item.event.slug ? "find out more!" : "link to event page"}</Link>
+                <br />
+                <span className={eventStyles.evtLink}>
+                    <Link to={item.event.slug}>{"find out more"}</Link>
+                </span>
             </li>
         ))
     )

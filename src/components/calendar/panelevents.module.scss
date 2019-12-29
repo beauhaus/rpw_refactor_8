@@ -15,6 +15,7 @@
 
 .evt-desc {
     margin: 1rem 0;
+    line-height: 1.8;
     color: $secondary-abbeygrey;
 }
 
@@ -22,11 +23,9 @@
     margin-bottom: 1rem;
     font-style: italic;
     position: absolute;
-    bottom: 0;
-    right: 1rem;
-    &::before {
-        content: '...'
-    }
+    bottom: 2vh;
+    right: 1.5rem;
+    display: block;
 }
 
 hr {
@@ -35,73 +34,234 @@ hr {
 
 /************* STYLECODES ***********/
 .game-class {
-    background: linear-gradient(90deg, $gameClass 0%,  $gameClass 10%, transparent 9%);
-    a, a:visited, a:focus {
-        color: $gameClass;
+    background: linear-gradient(90deg, $gameClass 10%, transparent 9%);
+    a,
+    a:visited,
+    a:active,
+    a:focus {
+        position: relative;
+        display: inline-block;
+        // font-variant: small-caps;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 30%;
+            left: 10%;
+            width: 100%;
+            height: 80%;
+            border: 3px solid $gameClass;
+            border-top-width: 0;
+            border-left-width: 0;
+           }
     }
 }
 
 .show {
-    background: linear-gradient(90deg, $show 0%,  $show 10%, transparent 9%);
-    a, a:visited, a:focus {
-        color: $show;
+    background: linear-gradient(90deg, $show 10%, transparent 9%);
+    a,
+    a:visited,
+    a:active,
+    a:focus {
+        position: relative;
+        display: inline-block;
+        // font-variant: small-caps;
+        &::before {
+            content: '';
+            color: $primary-midnightblue;
+            position: absolute;
+            top: 30%;
+            left: 10%;
+            width: 100%;
+            height: 80%;
+            border: 3px solid $show;
+            border-top-width: 0;
+            border-left-width: 0;
+           }
     }
 }
 
 .meeting {
-    background: linear-gradient(90deg, $meeting 0%,  $meeting 10%, transparent 9%);
-    a, a:visited, a:focus {
-        color: $meeting;
+    background: linear-gradient(90deg, $meeting 10%, transparent 9%);
+    a,
+    a:visited,
+    a:active,
+    a:focus {
+        position: relative;
+        display: inline-block;
+        &::before {
+            content: '';
+            color: $primary-midnightblue;
+            position: absolute;
+            top: 30%;
+            left: 10%;
+            width: 100%;
+            height: 80%;
+            border: 3px solid $meeting;
+            border-top-width: 0;
+            border-left-width: 0;
+           }
     }
 }
 
 .party-class {
-    background: linear-gradient(90deg, $partyClass 0%,  $partyClass 10%, transparent 9%);
-    a, a:visited, a:focus {
-        color: $partyClass;
+    background: linear-gradient(90deg, $partyClass 10%, transparent 9%);
+    a,
+    a:visited,
+    a:active,
+    a:focus {
+        position: relative;
+        display: inline-block;
+        &::before {
+            content: '';
+            color: $primary-midnightblue;
+            position: absolute;
+            top: 30%;
+            left: 10%;
+            width: 100%;
+            height: 80%;
+            border: 3px solid $partyClass;
+            border-top-width: 0;
+            border-left-width: 0;
+           }
     }
 }
 
 .chess-beginner {
-    background: linear-gradient(90deg, $chessBeginner 0%,  $chessBeginner 10%, transparent 9%);
-    a, a:visited, a:focus {
-        color: $chessBeginner;
+    background: linear-gradient(90deg, $chessBeginner 10%, transparent 9%);
+    a,
+    a:visited,
+    a:active,
+    a:focus {
+        position: relative;
+        display: inline-block;
+        &::before {
+            content: '';
+            color: $primary-midnightblue;
+            position: absolute;
+            top: 30%;
+            left: 10%;
+            width: 100%;
+            height: 80%;
+            border: 3px solid $chessBeginner;
+            border-top-width: 0;
+            border-left-width: 0;
+           }
     }
 }
 
 .robotics-beginner {
-    background: linear-gradient(90deg, $roboticsBeginner 0%,  $roboticsBeginner 10%, transparent 9%);
-    a, a:visited, a:focus {
-        color: $roboticsBeginner;
+    background: linear-gradient(90deg, $roboticsBeginner 10%, transparent 9%);
+    a,
+    a:visited,
+    a:active,
+    a:focus {
+        position: relative;
+        display: inline-block;
+        &::before {
+            content: '';
+            color: $primary-midnightblue;
+            position: absolute;
+            top: 30%;
+            left: 10%;
+            width: 100%;
+            height: 80%;
+            border: 3px solid $roboticsBeginner;
+            border-top-width: 0;
+            border-left-width: 0;
+           }
     }
 }
 
 .chess-intermediate {
-    background: linear-gradient(90deg, $chessIntermediate 0%,  $chessIntermediate 10%, transparent 9%);
-    a, a:visited, a:focus {
-        color: $chessIntermediate;
+    background: linear-gradient(90deg, $chessIntermediate 10%, transparent 9%);
+    a,
+    a:visited,
+    a:active,
+    a:focus {
+        position: relative;
+        display: inline-block;
+        &::before {
+            content: '';
+            color: $primary-midnightblue;
+            position: absolute;
+            top: 30%;
+            left: 10%;
+            width: 100%;
+            height: 80%;
+            border: 3px solid $chessIntermediate;
+            border-top-width: 0;
+            border-left-width: 0;
+           }
     }
 }
 
 .chess-advanced {
-    background: linear-gradient(90deg, $chessAdvanced 0%,  $chessAdvanced 10%, transparent 9%);
-    a, a:visited, a:focus {
-        color: $chessAdvanced;
+    background: linear-gradient(90deg, $chessAdvanced 10%, transparent 9%);
+    a,
+    a:visited,
+    a:active,
+    a:focus {
+        position: relative;
+        display: inline-block;
+        &::before {
+            content: '';
+            color: $primary-midnightblue;
+            position: absolute;
+            top: 30%;
+            left: 10%;
+            width: 100%;
+            height: 80%;
+            border: 3px solid $chessAdvanced;
+            border-top-width: 0;
+            border-left-width: 0;
+           }
     }
 
 }
 
 .oilpainting-beginner {
-    background: linear-gradient(90deg, $oilpaintingBeginner 0%,  $oilpaintingBeginner 10%, transparent 9%);
-    a, a:visited, a:focus {
-        color: $oilpaintingBeginner;
+    background: linear-gradient(90deg, $oilpaintingBeginner 10%, transparent 9%);
+    a,
+    a:visited,
+    a:active,
+    a:focus {
+        position: relative;
+        display: inline-block;
+        &::before {
+            content: '';
+            color: $primary-midnightblue;
+            position: absolute;
+            top: 30%;
+            left: 10%;
+            width: 100%;
+            height: 80%;
+            border: 3px solid $oilpaintingBeginner;
+            border-top-width: 0;
+            border-left-width: 0;
+           }
     }
 }
 
 .party-private {
-    background: linear-gradient(90deg, $partyPrivate 0%,  $partyPrivate 10%, transparent 9%);
-    a, a:visited, a:focus {
-        color: $partyPrivate;
+    background: linear-gradient(90deg, $partyPrivate 10%, transparent 9%);
+    a,
+    a:visited,
+    a:active,
+    a:focus {
+        position: relative;
+        display: inline-block;
+        &::before {
+            content: '';
+            color: $primary-midnightblue;
+            position: absolute;
+            top: 30%;
+            left: 10%;
+            width: 100%;
+            height: 80%;
+            border: 3px solid $partyPrivate;
+            border-top-width: 0;
+            border-left-width: 0;
+           }
     }
 }
 

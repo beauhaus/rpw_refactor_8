@@ -24,16 +24,15 @@
         margin-top: -2vh;
         padding: 0.5rem;
         padding-top: 0;
-        // border: 1px dashed #000;
         text-align: left;
         background: transparent;
         height: 40vh; // don't use 100%!!
         overflow: scroll; // DONT TOUCH!
 
-        // color: $primary-midnightblue;
+        color: $primary-midnightblue; // keep?
         li {
             padding-left: 1vw;
-            position: relative;
+            position: relative; // DON'T TOUCH!
         }
     }
 }

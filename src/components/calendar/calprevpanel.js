@@ -27,7 +27,7 @@ const LockyWrapPanel = ({ previewDate }) => {
 
         const tl = gsap.timeline({ defaults: { opacity: 1 } })
         tl.to(dateRef, { duration: .6, y: 0, ease: 'elastic(1,0.8)', delay: 0.2 })
-            .to(listRef, { duration: 2, y: 0, ease: "back(1.8)" }, '-=0.5')
+            .to(listRef, { duration: 1.5, y: 0, ease: "back(1.8)" }, '-=0.5')
 
     }, [previewDate])
 
