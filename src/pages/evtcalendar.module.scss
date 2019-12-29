@@ -1,14 +1,13 @@
 @import '../styles/variables.scss';
 
 .container {
-    background-color: #90bdb2;
     background: linear-gradient(15deg, #fff -30%, $secondary-weborange 70%);
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 8vh 42vh 48vh;
     
     padding-top: 8.5vh;
-    
+
     height: 109vh;
     width: 100vw;
     overflow-y: hidden;

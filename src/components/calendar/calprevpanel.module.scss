@@ -31,5 +31,9 @@
         overflow: scroll; // DONT TOUCH!
 
         // color: $primary-midnightblue;
+        li {
+            padding-left: 1vw;
+            position: relative;
+        }
     }
 }

@@ -1,9 +1,9 @@
 @import "../../styles/variables.scss";
 
 .evt-title {
- margin-bottom: 0;
- font-weight: 400;
- font-variant: small-caps;
+    margin-bottom: 0;
+    font-weight: 400;
+    font-variant: small-caps;
 
 }
 
@@ -14,55 +14,130 @@
 }
 
 .evt-desc {
-    margin-top: 0.5rem;
+    margin: 1rem 0;
     color: $secondary-abbeygrey;
 }
 
 .evt-link {
     margin-bottom: 1rem;
     font-style: italic;
+    position: absolute;
+    bottom: 0;
+    right: 1rem;
     &::before {
         content: '...'
     }
 }
+
 hr {
-    margin: 2rem 0 4rem;
+    margin: 2rem 0;
 }
 
+/************* STYLECODES ***********/
+.game-class {
+    background: linear-gradient(90deg, $gameClass 0%,  $gameClass 10%, transparent 9%);
+    a, a:visited, a:focus {
+        color: $gameClass;
+    }
+}
+
+.show {
+    background: linear-gradient(90deg, $show 0%,  $show 10%, transparent 9%);
+    a, a:visited, a:focus {
+        color: $show;
+    }
+}
+
+.meeting {
+    background: linear-gradient(90deg, $meeting 0%,  $meeting 10%, transparent 9%);
+    a, a:visited, a:focus {
+        color: $meeting;
+    }
+}
+
+.party-class {
+    background: linear-gradient(90deg, $partyClass 0%,  $partyClass 10%, transparent 9%);
+    a, a:visited, a:focus {
+        color: $partyClass;
+    }
+}
+
+.chess-beginner {
+    background: linear-gradient(90deg, $chessBeginner 0%,  $chessBeginner 10%, transparent 9%);
+    a, a:visited, a:focus {
+        color: $chessBeginner;
+    }
+}
+
+.robotics-beginner {
+    background: linear-gradient(90deg, $roboticsBeginner 0%,  $roboticsBeginner 10%, transparent 9%);
+    a, a:visited, a:focus {
+        color: $roboticsBeginner;
+    }
+}
+
+.chess-intermediate {
+    background: linear-gradient(90deg, $chessIntermediate 0%,  $chessIntermediate 10%, transparent 9%);
+    a, a:visited, a:focus {
+        color: $chessIntermediate;
+    }
+}
+
+.chess-advanced {
+    background: linear-gradient(90deg, $chessAdvanced 0%,  $chessAdvanced 10%, transparent 9%);
+    a, a:visited, a:focus {
+        color: $chessAdvanced;
+    }
+
+}
+
+.oilpainting-beginner {
+    background: linear-gradient(90deg, $oilpaintingBeginner 0%,  $oilpaintingBeginner 10%, transparent 9%);
+    a, a:visited, a:focus {
+        color: $oilpaintingBeginner;
+    }
+}
+
+.party-private {
+    background: linear-gradient(90deg, $partyPrivate 0%,  $partyPrivate 10%, transparent 9%);
+    a, a:visited, a:focus {
+        color: $partyPrivate;
+    }
+}
 
 // .panelevents-container { // ul
-    // padding: 2%;
-    
-    // border-radius: 6px; 
-    // width: 100%;
-    // padding-top: 2vh;
-    // opacity: 0.5;
-    // text-align: left;
-    // height: 43vh; // ❗️❗️
-    // li {
-    //     padding-top: 1vh;
-    //     // position: relative;
-    //     border: 2px solid blue;
-    //     width: 100%;
-    //     h1.evt-title {
-    //         font-size: 1.8rem;
-    //         font-weight: 100;
-    //         color: #575757;
-    //         margin: 1rem auto 0.5rem;
-    //     }
+// padding: 2%;
 
-    //     span {
-    //         // position: absolute;
-    //         bottom: 0;
-    //         right: 2vw;
-    //         text-align: right;
-    //         font-style: oblique;
-    //         font-variant-caps: small-caps;
-    //     }
-    //     p {
-    //         line-height: 3;
-    //     }
+// border-radius: 6px; 
+// width: 100%;
+// padding-top: 2vh;
+// opacity: 0.5;
+// text-align: left;
+// height: 43vh; // ❗️❗️
+// li {
+//     padding-top: 1vh;
+//     // position: relative;
+//     border: 2px solid blue;
+//     width: 100%;
+//     h1.evt-title {
+//         font-size: 1.8rem;
+//         font-weight: 100;
+//         color: #575757;
+//         margin: 1rem auto 0.5rem;
+//     }
 
-    // }
+//     span {
+//         // position: absolute;
+//         bottom: 0;
+//         right: 2vw;
+//         text-align: right;
+//         font-style: oblique;
+//         font-variant-caps: small-caps;
+//     }
+//     p {
+//         line-height: 3;
+//     }
+
+// }
 
 // }
