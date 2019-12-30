@@ -4,7 +4,7 @@
     margin-bottom: 0;
     font-weight: 400;
     font-variant: small-caps;
-
+    mix-blend-mode: hard-light;
 }
 
 .evt-hours {
@@ -52,6 +52,7 @@ hr {
             border: 3px solid $gameClass;
             border-top-width: 0;
             border-left-width: 0;
+            border-radius: 5px;
            }
     }
 }
@@ -76,6 +77,7 @@ hr {
             border: 3px solid $show;
             border-top-width: 0;
             border-left-width: 0;
+            border-radius: 5px;
            }
     }
 }
@@ -99,6 +101,7 @@ hr {
             border: 3px solid $meeting;
             border-top-width: 0;
             border-left-width: 0;
+            border-radius: 5px;
            }
     }
 }
@@ -122,6 +125,7 @@ hr {
             border: 3px solid $partyClass;
             border-top-width: 0;
             border-left-width: 0;
+            border-radius: 5px;
            }
     }
 }
@@ -145,6 +149,7 @@ hr {
             border: 3px solid $chessBeginner;
             border-top-width: 0;
             border-left-width: 0;
+            border-radius: 5px;
            }
     }
 }
@@ -168,6 +173,7 @@ hr {
             border: 3px solid $roboticsBeginner;
             border-top-width: 0;
             border-left-width: 0;
+            border-radius: 5px;
            }
     }
 }
@@ -191,6 +197,7 @@ hr {
             border: 3px solid $chessIntermediate;
             border-top-width: 0;
             border-left-width: 0;
+            border-radius: 5px;
            }
     }
 }
@@ -214,6 +221,7 @@ hr {
             border: 3px solid $chessAdvanced;
             border-top-width: 0;
             border-left-width: 0;
+            border-radius: 5px;
            }
     }
 
@@ -238,6 +246,7 @@ hr {
             border: 3px solid $oilpaintingBeginner;
             border-top-width: 0;
             border-left-width: 0;
+            border-radius: 5px;
            }
     }
 }
@@ -261,6 +270,7 @@ hr {
             border: 3px solid $partyPrivate;
             border-top-width: 0;
             border-left-width: 0;
+            border-radius: 5px;
            }
     }
 }

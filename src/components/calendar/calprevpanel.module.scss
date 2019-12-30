@@ -10,29 +10,34 @@
     margin: 0 0.5rem;
     // background: rgb(241, 234, 221);
     background: #f1f1f1;
+    // background: wheat;
     color: $primary-midnightblue;
     
+    position: relative; //?
+    
     h2.selected-date {
+        position: absolute;
         font-size: 1rem;
         color: rgba(0, 0, 0, 0.4); // (alternative)
         color: $primary-mistgrey;
-        margin: 1rem;
-        background: transparent;
+        right: 1rem;
+        top: 1rem;
     }
     
     .evts-frame {
-        margin-top: -2vh;
+        margin-top: 7px;
         padding: 0.5rem;
-        padding-top: 0;
+        padding-top: 3vh;
         text-align: left;
         background: transparent;
-        height: 40vh; // don't use 100%!!
+        height: 46vh; // don't use 100%!!
         overflow: scroll; // DONT TOUCH!
 
         color: $primary-midnightblue; // keep?
         li {
             padding-left: 1vw;
             position: relative; // DON'T TOUCH!
+            // border: 1px dashed purple;
         }
     }
 }

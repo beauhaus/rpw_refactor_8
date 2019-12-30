@@ -36,9 +36,9 @@ const LockyWrapPanel = ({ previewDate }) => {
 
     return (
         <div className={calprevpanelStyles.container} >
-            <h2 className={calprevpanelStyles.selectedDate}
-                ref={elem => dateRef = elem}>{moment(previewDate).format("dddd, MMMM Do")}</h2>
             <Locky enabled={false}>
+                <h2 className={calprevpanelStyles.selectedDate}
+                    ref={elem => dateRef = elem}>{moment(previewDate).format("MM.DD")}</h2>
                 <ul ref={elem => listRef = elem}
                     className={calprevpanelStyles.evtsFrame}
                 >

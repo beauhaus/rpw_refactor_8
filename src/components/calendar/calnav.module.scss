@@ -4,15 +4,18 @@
     grid-row: 1;
     grid-column: 1;
     display: flex;
-    align-content: center;
     border-radius: 6px;
-    display: flex;
+
     justify-content: space-between;
+    align-content: center;
     align-items: center;
     height: 8vh;
-    width: 100vw;
+    // width: 100vw;
     padding: 0 2vw;
     position: relative; //✅ for pos of h1
+    img.rpw-icon {
+        display: none;
+    }
     h1 {
         font-weight: 200;
         font-size: 2rem;
@@ -51,17 +54,31 @@
 
 @media screen and (min-width: 768px) {
     .nav {
+        padding: 0 10vw;
+        grid-column: 1/-1;
         grid-row: 1;
-        grid-column: 1/3;
+        justify-content: space-between;
+        
+        h1 {
+            font-size: 3.3rem;
+            font-weight: 100;        
+            margin: 0 auto;
+        }
 
-        .sub-container {
-            width: 80vw;
-
-            h1 {
-                width: 40vw;
-                font-size: 3rem;
-                // border: 1px solid green;
+        button.cal-nav-btn {
+            display: inline-block;
+            & > span {
+              font-size: 4.5rem;        
             }
+        }
+        img.rpw-icon {
+            position: absolute;
+            top: -36px;
+            left: -22px;
+            display: block;
+            justify-self: self-start;
+            width: 95px;
+            margin: 0;
         }
     }
 }

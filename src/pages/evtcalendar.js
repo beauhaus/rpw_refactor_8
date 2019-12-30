@@ -5,12 +5,11 @@ import { monthArrayMaker } from '../utils/utils'
 import PreviewPanel from '../components/calendar/calprevpanel'
 import CalNav from '../components/calendar/calnav'
 import DaysGrid from '../components/calendar/daysgrid'
+import Layout from '../components/layout'
 
 
 import evtCalStyles from './evtcalendar.module.scss'
 // import Header from '../components/header'
-
-
 
 const EvtCalendar = () => {
     const [selectedDate, setSelectedDate] = useState(moment().format('YYYY-MM-DD'))
@@ -38,19 +37,24 @@ const EvtCalendar = () => {
     const daysArr = monthArrayMaker(selectedDate)
 
     return (
-        <main className={evtCalStyles.container}>
-            <CalNav
-                decMonth={decrementMonth}
-                incMonth={incrementMonth}
-                selectedDate={selectedDate}
-            />
-            <DaysGrid
-                daysArr={daysArr}
-                selectedDate={selectedDate}
-                dayClick={selectDay}
-            />
-            <PreviewPanel previewDate={previewDate}/>
-        </main>
+        <Layout>
+
+            <main className={evtCalStyles.pageContainer}>
+                <div className={evtCalStyles.calendarContainer}>
+                    <CalNav
+                        decMonth={decrementMonth}
+                        incMonth={incrementMonth}
+                        selectedDate={selectedDate}
+                    />
+                    <DaysGrid
+                        daysArr={daysArr}
+                        selectedDate={selectedDate}
+                        dayClick={selectDay}
+                    />
+                    <PreviewPanel previewDate={previewDate} />
+                </div>
+            </main>
+        </Layout>
     )
 }
 
