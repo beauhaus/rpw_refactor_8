@@ -19,17 +19,17 @@ const EvtCalendar = () => {
 
     const incrementMonth = () => {
         let addMonth = moment(selectedDate).add(1, 'month').format("YYYY-MM-DD");
-        console.log("INC!")
+        // console.log("INC!")
         return setSelectedDate(addMonth)
     }
 
     const decrementMonth = () => {
-        console.log("Dec!!")
+        // console.log("Dec!!")
         let subtractMonth = moment(selectedDate).subtract(1, 'month').format("YYYY-MM-DD");
         return setSelectedDate(subtractMonth)
     }
     const selectDay = (dateString) => {
-        console.log("selectDay Input:", dateString)
+        // console.log("selectDay Input:", dateString)
         return setPreviewDate(dateString)
     }
 
@@ -39,17 +39,20 @@ const EvtCalendar = () => {
 
     return (
         <main className={evtCalStyles.container}>
+            <div className={evtCalStyles.calContainer}>
+
             <CalNav
                 decMonth={decrementMonth}
                 incMonth={incrementMonth}
                 selectedDate={selectedDate}
-            />
+                />
             <DaysGrid
                 daysArr={daysArr}
                 selectedDate={selectedDate}
                 dayClick={selectDay}
-            />
+                />
             <PreviewPanel previewDate={previewDate}/>
+            </div>
         </main>
     )
 }

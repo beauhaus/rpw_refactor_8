@@ -1,15 +1,32 @@
 @import '../styles/variables.scss';
 
-.container {
+.container { /*main*/
     background: linear-gradient(15deg, #fff -30%, $secondary-weborange 70%);
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 8vh 42vh 48vh;
+    // grid-template-columns: 1fr;
+    // grid-template-rows: 8vh 42vh 48vh;
     
     padding-top: 8.5vh;
 
     height: 109vh;
     width: 100vw;
     overflow-y: hidden;
+    // border: 2px dashed fuchsia;
+
+    .cal-container {
+        background: linear-gradient(15deg, #fff -30%, $secondary-weborange 70%);
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 8vh 42vh 48vh;
+        
+        // padding-top: 8.5vh;
+    
+        height: 109vh;
+        width: 100vw;
+        overflow-y: hidden;
+        
+        // border: 2px solid black;
+
+    }
 }
 
