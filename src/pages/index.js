@@ -6,8 +6,7 @@ import Landing from '../components/landing'
 const Indexpage = () => {
     return (
         <Layout>
-            {/* <Landing/> */}
-            <h1>Hello</h1>
+            <Landing/>
         </Layout>
     )
 }
