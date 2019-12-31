@@ -6,6 +6,8 @@ import PreviewPanel from '../components/calendar/calprevpanel'
 import CalNav from '../components/calendar/calnav'
 import DaysGrid from '../components/calendar/daysgrid'
 import Layout from '../components/layout'
+// import rpwOrbBlue from '../../../images/rpw-calendar-orb.png'
+import rpwIconBlue from '../../images/rpw-calendar-orb.png'
 
 
 import evtCalStyles from './evtcalendar.module.scss'
@@ -40,7 +42,8 @@ const EvtCalendar = () => {
         <Layout>
 
             <main className={evtCalStyles.pageContainer}>
-                <div className={evtCalStyles.calendarContainer}>
+                {/* <div className={evtCalStyles.calendarContainer}> */}
+                    <img className={evtCalStyles.rpwIcon} src={rpwIconBlue} alt="rpw-icon-blue" />
                     <CalNav
                         decMonth={decrementMonth}
                         incMonth={incrementMonth}
@@ -52,7 +55,7 @@ const EvtCalendar = () => {
                         dayClick={selectDay}
                     />
                     <PreviewPanel previewDate={previewDate} />
-                </div>
+                {/* </div> */}
             </main>
         </Layout>
     )

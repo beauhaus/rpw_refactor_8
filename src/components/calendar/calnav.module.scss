@@ -13,9 +13,7 @@
     // width: 100vw;
     padding: 0 2vw;
     position: relative; //✅ for pos of h1
-    img.rpw-icon {
-        display: none;
-    }
+    
     h1 {
         font-weight: 200;
         font-size: 2rem;
@@ -55,7 +53,7 @@
 @media screen and (min-width: 768px) {
     .nav {
         padding: 0 10vw;
-        grid-column: 1/-1;
+        grid-column: 2/-1;
         grid-row: 1;
         justify-content: space-between;
         
@@ -68,17 +66,11 @@
         button.cal-nav-btn {
             display: inline-block;
             & > span {
-              font-size: 4.5rem;        
+              font-size: 4.5rem;
+              &:hover {
+                  color: $primary-robinseggblue;
+              }      
             }
-        }
-        img.rpw-icon {
-            position: absolute;
-            top: -36px;
-            left: -22px;
-            display: block;
-            justify-self: self-start;
-            width: 95px;
-            margin: 0;
         }
     }
 }

@@ -3,18 +3,22 @@
 .page-container {
 
     /*main*/
-    .calendar-container {
-        /*div*/
-        background: linear-gradient(15deg, #fff -30%, $secondary-weborange 70%);
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 8vh 42vh 48vh;
-        padding-top: 8.5vh;
-        height: 109vh;
-        width: 100vw;
-        overflow: hidden;
-        border-radius: 6px;
+    background: linear-gradient(15deg, #fff -30%, $secondary-weborange 70%);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 8vh 42vh 48vh;
+    padding-top: 8.5vh;
+    height: 109vh;
+    width: 100vw;
+    overflow: hidden;
+    border-radius: 6px;
+    img.rpw-icon {
+        display: none;
     }
+    // .calendar-container {
+    //     /*div*/
+       
+    // }
 
 }
 
@@ -26,17 +30,29 @@
 
 @media screen and (min-width: 768px) {
     .page-container {
-
         /*main*/
-        .calendar-container {
-            padding-top: 1.5vh;
-            width: 80vw;
-            max-width: 1340px;
-            margin: 0 auto;
-            height: 80vh;
-            grid-template-columns: 1fr 1fr;
+        padding-top: 1.5vh;
+        width: 80vw;
+        max-width: 1340px;
+        margin: 0 auto;
+        height: 80vh;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: 10vh 70vh;
-            // padding-top: 1.5vh;
+        position: relative;
+        -webkit-appearance: none;
+        -webkit-box-shadow: 0 0 10px 5px rgba(15, 62, 100, 0.5);
+        box-shadow: 0 0 10px 5px rgba(15, 62, 100, 0.5);
+        img.rpw-icon {
+            position: absolute;
+            top: -23px;
+            left: -20px;
+            display: block;
+            justify-self: self-start;
+            width: 95px;
+            margin: 0;
         }
+        // .calendar-container {
+          
+        // }
     }
 }
