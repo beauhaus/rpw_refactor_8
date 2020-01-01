@@ -5,7 +5,7 @@
 
 .container {
     background: transparent;
-    border-radius: 5px;
+    border-radius: $calBorderRad;
   
     overflow: hidden;
     padding: 0;
@@ -131,7 +131,7 @@
 @media screen and (min-width: 768px) {
     .container {
         background: transparent;
-        border-radius: 6px;
+        border-radius: $calBorderRad;
         font-weight: 100;
         color: $primary-midnightblue;
         padding: 2px;
@@ -192,7 +192,7 @@
             left: 0;
             height: 30px;
             color: $primary-magenta;
-            border-radius: 6px;
+            border-radius: $calBorderRad;
             box-shadow: inset -1px -1px 0px 0px $primary-midnightblue;
         }
 
