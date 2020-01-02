@@ -40,7 +40,7 @@ const EvtCalendar = () => {
 
     return (
         <main className={evtCalStyles.container}>
-            <Header className={evtCalStyles.header}/>
+            {/* <Header className={evtCalStyles.header}/> */}
 
             <div className={evtCalStyles.calContainer}>
                 <img className={evtCalStyles.rpwIcon} src={rpwOrbBlue} alt="rpw-icon-blue" />

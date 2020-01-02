@@ -10,9 +10,7 @@
     width: 100vw;
     overflow-y: hidden;
 
-    border: 3px solid green;
-    position: relative; //?
-    z-index: 101; //?
+    
     
     .cal-container {
         background: linear-gradient(15deg, #fff -30%, $secondary-weborange 70%);
@@ -22,8 +20,8 @@
         height: 109vh;
         width: 100vw;
         overflow-y: hidden;
-        // margin: 0 auto; //?
         margin: 8.5vh auto;
+        margin: 0;
         border-radius: $calBorderRad;
 
         img {
@@ -89,8 +87,8 @@
             transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 
             &:hover {
-                -webkit-box-shadow: 0 0 10px 7px rgba(15, 62, 100, 0.5);
-                box-shadow: 0 0 10px 7px rgba(15, 62, 100, 0.5);
+                -webkit-box-shadow: 0px 4px 15px 10px rgba(15, 62, 100, 0.5);
+                box-shadow: 0px 4px 15px 10px rgba(15, 62, 100, 0.5);
                 cursor: pointer;
                 transform: scale(1.01, 1.01);
             }
