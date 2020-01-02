@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import moment from 'moment'
 import { monthArrayMaker } from '../utils/utils'
 
+import Header from '../components/header'
 import PreviewPanel from '../components/calendar/calprevpanel'
 import CalNav from '../components/calendar/calnav'
 import DaysGrid from '../components/calendar/daysgrid'
@@ -9,7 +10,6 @@ import evtCalStyles from './evtcalendar.module.scss'
 
 import rpwOrbBlue from '../../images/rpw-calendar-orb.png'
 
-// import Header from '../components/header'
 
 
 
@@ -40,21 +40,22 @@ const EvtCalendar = () => {
 
     return (
         <main className={evtCalStyles.container}>
+            <Header className={evtCalStyles.header}/>
 
-    <div className={evtCalStyles.calContainer}> 
-    <img className={evtCalStyles.rpwIcon} src={rpwOrbBlue} alt="rpw-icon-blue" />
+            <div className={evtCalStyles.calContainer}>
+                <img className={evtCalStyles.rpwIcon} src={rpwOrbBlue} alt="rpw-icon-blue" />
 
-            <CalNav
-                decMonth={decrementMonth}
-                incMonth={incrementMonth}
-                selectedDate={selectedDate}
+                <CalNav
+                    decMonth={decrementMonth}
+                    incMonth={incrementMonth}
+                    selectedDate={selectedDate}
                 />
-            <DaysGrid
-                daysArr={daysArr}
-                selectedDate={selectedDate}
-                dayClick={selectDay}
+                <DaysGrid
+                    daysArr={daysArr}
+                    selectedDate={selectedDate}
+                    dayClick={selectDay}
                 />
-            <PreviewPanel previewDate={previewDate}/>
+                <PreviewPanel previewDate={previewDate} />
             </div>
         </main>
     )
