@@ -10,9 +10,6 @@ import evtCalStyles from './evtcalendar.module.scss'
 
 import rpwOrbBlue from '../../images/rpw-calendar-orb.png'
 
-
-
-
 const EvtCalendar = () => {
     const [selectedDate, setSelectedDate] = useState(moment().format('YYYY-MM-DD'))
 
