@@ -5,8 +5,10 @@ import { monthArrayMaker } from '../utils/utils'
 import PreviewPanel from '../components/calendar/calprevpanel'
 import CalNav from '../components/calendar/calnav'
 import DaysGrid from '../components/calendar/daysgrid'
-import rpwOrbBlue from '../../images/rpw-calendar-orb.png'
 import evtCalStyles from './evtcalendar.module.scss'
+
+import rpwOrbBlue from '../../images/rpw-calendar-orb.png'
+
 // import Header from '../components/header'
 
 
@@ -40,7 +42,8 @@ const EvtCalendar = () => {
         <main className={evtCalStyles.container}>
 
     <div className={evtCalStyles.calContainer}> 
-            <img className={evtCalStyles.rpwIcon} src={rpwOrbBlue} alt="rpw-icon-blue" />
+    <img className={evtCalStyles.rpwIcon} src={rpwOrbBlue} alt="rpw-icon-blue" />
+
             <CalNav
                 decMonth={decrementMonth}
                 incMonth={incrementMonth}

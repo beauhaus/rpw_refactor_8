@@ -48,6 +48,19 @@
     .container { /* main */
         grid-row: 2;
         grid-column: 1;
+        height: 49vh;
+
+        h2.selected-date {
+            opacity: 1;
+        }
+        & > div { /* locky */
+            // border: 4px dashed purple;
+            height: 42vh;
+        }
+        .evts-frame {
+            opacity: 1;
+            height: 42vh;
+        }
     }
 }
 
