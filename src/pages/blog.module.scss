@@ -1,0 +1,69 @@
+@import '../styles/variables.scss';
+// @import '../styles/variables.css';
+
+.blog-container {
+    
+    background: var(--banana-cream);
+    grid-row: 2;
+    text-align: left;
+    width: 100vw;
+    height: 200vh;
+    min-height: 100vh;
+    
+    h1 {
+        color: var(--muted-green-dk);
+        font-weight: 300;
+        margin-top: 3vh;
+        font-size: 3rem;
+        margin: 3vh auto;
+        text-align: center;
+    }
+
+}
+
+.posts {
+    list-style-type: none;
+    margin: 0;
+}
+
+.post {
+    margin: 1rem 0;
+
+    a {
+        background: rgba(255, 255, 255, 0.4);
+        color: #000;
+        display: block;
+        padding: 1rem;
+        // text-decoration: none;
+        &:hover {
+            background: #e4e4e4;
+        }
+    }
+    h2 {
+        margin-bottom: 0;
+    }
+    p {
+        color: #777777;
+        font-size: .8rem;
+        font-style: italic;
+    }
+}
+
+
+/*************************************************/
+/************* iPad and larger  ******************/
+/*************************************************/
+
+@media screen and (min-width: 768px) {
+    .blog-container {
+        width: 100vw;
+  
+      padding: 2vh auto;
+      section.blog-content-container {
+        // border: 2px dashed blue;
+        width: 70vw;
+        margin: 0 auto;
+  
+      }
+    }
+  }

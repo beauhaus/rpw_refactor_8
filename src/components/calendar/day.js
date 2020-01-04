@@ -14,7 +14,6 @@ const DaysGrid = ({ ownData, monthCheck, dayClick }) => {
             <button className={monthCheck && fullDate === presentDay ? dayStyles.currentDate : dayStyles.calendarDay}
                 onClick={() => {dayClick(fullDate)}}
                 onKeyDown={() => dayClick(fullDate)}
-                role="button"
                 tabIndex={Number(formedDay)}
             >
                 <div className={dayStyles.dayNumber}>{formedDay}</div>

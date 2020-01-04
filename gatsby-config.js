@@ -29,11 +29,32 @@ module.exports = {
         plugins: ['gatsby-remark-images'],
       },
     },
+    // {
+    //   resolve: 'gatsby-source-filesystem',
+    //   options: {
+    //     name: 'posts',
+    //     path: 'posts',
+    //   },
+    // },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/content/pages`,
+        name: `pages`,
+      },
+    },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: "images",
         path: "images"
+      }
+    },
+    {
+      resolve: 'gatsby-source-contentful',
+      options: {
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN
       }
     },
     {

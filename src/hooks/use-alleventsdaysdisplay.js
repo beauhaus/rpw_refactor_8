@@ -25,6 +25,7 @@ const useEvents = (searchParam) => {
   // return evtsArr;
 
 // console.log("hook cc: ", evtsArr[0])
+    // slug: `/events/${item.event.slug}`,????
 
 return evtsArr.map(item => ({
     title: item.event.title,
