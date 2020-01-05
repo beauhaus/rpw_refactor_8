@@ -29,18 +29,11 @@ module.exports = {
         plugins: ['gatsby-remark-images'],
       },
     },
-    // {
-    //   resolve: 'gatsby-source-filesystem',
-    //   options: {
-    //     name: 'posts',
-    //     path: 'posts',
-    //   },
-    // },
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
-        path: `${__dirname}/src/content/pages`,
-        name: `pages`,
+        name: 'pages',
+        path: require.resolve('./src/pages')
       },
     },
     {

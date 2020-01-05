@@ -10,17 +10,18 @@ import Navlink from '../components/navlink'
  */
 
 export const query = graphql`
-query ($slug: String!){
+query ($slug: String){
   mdx(frontmatter: { slug: { eq: $slug } }) {
     frontmatter {
       slug
-      title
-      hours
-      tags
     }
     body 
   }
 }`
+
+// title
+      // hours
+      // tags
 
 /* destructured and aliased to "event" 
  * (see link above)
@@ -31,9 +32,9 @@ const EventPostTemplate = ({data: {mdx: event }}) => {
   return (
     <div>
 
-      <h1>{event.frontmatter.title}</h1>
+      {/* <h1>{event.frontmatter.title}</h1>
       <p>{event.frontmatter.hours}</p>
-      <p>{event.frontmatter.tags}</p>
+      <p>{event.frontmatter.tags}</p> */}
       
       <MDXRenderer>{event.body}</MDXRenderer>
       <Navlink to="/" textContent={"home"}/>

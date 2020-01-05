@@ -16,7 +16,7 @@ const PanelEvents = ({ db }) => {
                 {/* <hr className={eventStyles.evtDivider} /> */}
                 <br />
                 <span className={eventStyles.evtLink}>
-                    <Link to={item.event.slug}>{"find out more"}</Link>
+                    <Link to={`/events/${item.event.slug}`}>{"find out more"}</Link>
                 </span>
             </li>
         ))
