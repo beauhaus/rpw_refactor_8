@@ -4,69 +4,62 @@ https://nodejs.org/dist/latest-v12.x/docs/api/path.html#path_path_basename_path_
 
 const path = require("path");
 
-
-/* this fetches contenful slugs */
- /* thanks to Andrew Mead
-    https://youtu.be/8t0vNu2fCCM?t=9980
-
+   /*
+    * thanks to Andrew Mead
+    * https://youtu.be/8t0vNu2fCCM?t=9980
+    * AND TO...
+    * 
+    * https://swas.io/blog/using-multiple-queries-on-gatsbyjs-createpages-node-api/
+    * for the multiple queries code
+    * 
     */
-module.exports.createPages = async ({ graphql, actions }) => {
-    const { createPage } = actions
 
-    const blogTemplate = path.resolve('./src/templates/blog.js');
-    const res = await graphql(`
-    query {
-        allContentfulBlogPost {
-            edges {
-              node {
-                slug
-              }
-            }
-          }
-    }
-    `)
-
-   
-    res.data.allContentfulBlogPost.edges.forEach((edge)=>{
-        createPage({
-            component: blogTemplate,
-            path: `/blog/${edge.node.slug}`,
-            context: {
-                slug: edge.node.slug
-            }
-        }) 
-    })
-
-}
-
-module.exports.createPages = async ({actions, graphql, reporter})=> {
+module.exports.createPages = async ({ graphql, actions, reporter }) => {
+  const { createPage } = actions
     const evtPostTemplate = path.resolve('./src/templates/event-post.js');
 
-    const result = await graphql(`
+  const blogTemplate = path.resolve('./src/templates/blog.js');
+
+  const result = await graphql(`
     query {
-        allMdx {
-          nodes {
-            frontmatter {
-              slug
-            }
+      contentful: allContentfulBlogPost {
+        edges {
+          node {
+            slug
           }
         }
-      }`);
-      if (result.errors) {
-          reporter.panic('failed to create evt post', result.errors)
       }
-
-      const eventposts = result.data.allMdx.nodes;
-                //   slug: `/events/${evtPost.frontmatter.slug}/`
-
-      eventposts.forEach(evtPost => {
-          actions.createPage({
-              path: evtPost.frontmatter.slug,
-              component: evtPostTemplate,
-              context: {
-                slug: evtPost.frontmatter.slug
-              }
-          })
-      })
+      events: allMdx {
+        nodes {
+          frontmatter {
+            slug
+          }
+        }
+      }
+    }
+      `)
+  if (result.errors) {
+    reporter.panic('failed to create posts from gatsby-node.js', result.errors)
+  }
+  const blogposts = result.data.contentful.edges;
+  const eventposts = result.data.events.nodes;
+  eventposts.forEach(evtPost => {
+    actions.createPage({
+      path: evtPost.frontmatter.slug,
+      component: evtPostTemplate,
+      context: {
+        slug: evtPost.frontmatter.slug
+      }
+    })
+  })
+  blogposts.forEach((edge) => {
+    createPage({
+      component: blogTemplate,
+      path: `/blog/${edge.node.slug}`,
+      context: {
+        slug: edge.node.slug
+      }
+    })
+  })
 
 }

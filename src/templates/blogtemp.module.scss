@@ -1,0 +1,19 @@
+@import '../styles/variables.scss';
+
+.blog-temp-container {
+    min-height: 80vh;
+    grid-row: 2;
+    width: 100vw;
+    min-height: 100vh;
+    background: whitesmoke;
+    color: var(--rudy-text);
+    text-align: left;
+    font-size: 1.3rem;
+    line-height: 1.3;
+    .blog-temp-content-container{
+        padding: 2%;
+        h1, p {
+            margin-left: 1%;
+        }
+    }
+}
