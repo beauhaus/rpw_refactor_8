@@ -8,7 +8,6 @@ https://github.com/gatsbyjs/gatsby/issues/17865#issuecomment-535627408
 warning about react unsafe life-cycle methods... as of Oct 16
 
 
-Fix SEO COMP
 
 
 TODO: menu lines
