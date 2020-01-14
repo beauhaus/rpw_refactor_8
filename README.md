@@ -13,7 +13,6 @@ TODO: https://www.gatsbyjs.org/docs/add-seo-component/
 
 Fix SEO COMP
 
-TODO: Google Analytics
 
 TODO: menu lines
 
